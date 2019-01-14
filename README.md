@@ -10,6 +10,8 @@ This investigation concerns the rationale behind the 10-EPV rule of thumb for pr
 
 In short, I strove to recreate the figure below where the same simulation is created with a categorical predictor.
 
+<img src="/Users/Raul/Desktop/Working/epv/docs/courvoisier.png" width="50%" style="display: block; margin: auto;" />
+
 Technical
 ---------
 
@@ -30,6 +32,13 @@ Consequently, I created a list of functions instrumental in recreating ths simul
 `generate_replicates(dat, epv, iterations = 500,cores=detectCores()-2)` - backbone function for simulation generating all of the necessary replicates for a choice of EPV and OR. Corresponds to a single point on the graph. Sequentially sampling is the major bottleneck, and so it was parallelized.
 `generate_replicates_across_epv(dat,epv,iterations = 500)` - generates a line on the plot; simply calls the former.
 `epv_simulation(epv, iterations = 500)` - generates all lines for a plot, i.e. all necessary replicates for a plot.
+
+Results
+-------
+
+Running a simulation with a categorical as oppose to a continuous predictor resulted in a much larger proportion of nonconverged parameter estimates. Interestingly, holding EPV constant, it appeared that sequential sampling resulted in identical number of sample sizes across odds ratios, as can be seen in the data frame `n_tab`. In addition, we validated our suspicion that larger odds ratios and smaller EPVs result in more inequitable parameter estimates as measured via the Gini coefficient, and recorded in `gini_tab`. This finding may be extended and explored to propose a metric that would better inform power and sample size estimates for prognostic models, among other things. Below is the our replicated plot with the above plot superimposed on it.
+
+<img src="/Users/Raul/Desktop/Working/epv/output/Comparison.png" width="70%" style="display: block; margin: auto;" />
 
 References
 ----------
