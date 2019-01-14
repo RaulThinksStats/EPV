@@ -1,0 +1,1227 @@
+18/12/09 17:35:22 INFO SparkContext: Running Spark version 2.2.1
+18/12/09 17:35:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/12/09 17:35:22 INFO SparkContext: Submitted application: sparklyr
+18/12/09 17:35:22 INFO SecurityManager: Changing view acls to: Raul
+18/12/09 17:35:22 INFO SecurityManager: Changing modify acls to: Raul
+18/12/09 17:35:22 INFO SecurityManager: Changing view acls groups to: 
+18/12/09 17:35:22 INFO SecurityManager: Changing modify acls groups to: 
+18/12/09 17:35:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Raul); groups with view permissions: Set(); users  with modify permissions: Set(Raul); groups with modify permissions: Set()
+18/12/09 17:35:23 INFO Utils: Successfully started service 'sparkDriver' on port 57727.
+18/12/09 17:35:23 INFO SparkEnv: Registering MapOutputTracker
+18/12/09 17:35:23 INFO SparkEnv: Registering BlockManagerMaster
+18/12/09 17:35:23 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/12/09 17:35:23 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/12/09 17:35:23 INFO DiskBlockManager: Created local directory at /private/var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/blockmgr-509b7b95-9a1c-44f6-8623-fa4b7c0bf2a3
+18/12/09 17:35:23 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+18/12/09 17:35:23 INFO SparkEnv: Registering OutputCommitCoordinator
+18/12/09 17:35:23 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/12/09 17:35:23 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://127.0.0.1:4040
+18/12/09 17:35:23 INFO SparkContext: Added JAR file:/Library/Frameworks/R.framework/Versions/3.5/Resources/library/sparklyr/java/sparklyr-2.2-2.11.jar at spark://127.0.0.1:57727/jars/sparklyr-2.2-2.11.jar with timestamp 1544398523367
+18/12/09 17:35:23 INFO Executor: Starting executor ID driver on host localhost
+18/12/09 17:35:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 57729.
+18/12/09 17:35:23 INFO NettyBlockTransferService: Server created on 127.0.0.1:57729
+18/12/09 17:35:23 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/12/09 17:35:23 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/09 17:35:23 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:57729 with 366.3 MB RAM, BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/09 17:35:23 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/09 17:35:23 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/09 17:35:23 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
+18/12/09 17:35:24 INFO SharedState: loading hive config file: file:/Users/Raul/spark/spark-2.2.1-bin-hadoop2.7/conf/hive-site.xml
+18/12/09 17:35:24 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/Raul/Desktop/Working/spark/spark-warehouse').
+18/12/09 17:35:24 INFO SharedState: Warehouse path is 'file:/Users/Raul/Desktop/Working/spark/spark-warehouse'.
+18/12/09 17:35:24 INFO HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+18/12/09 17:35:25 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+18/12/09 17:35:25 INFO ObjectStore: ObjectStore, initialize called
+18/12/09 17:35:25 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+18/12/09 17:35:25 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+18/12/09 17:35:26 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+18/12/09 17:35:27 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/12/09 17:35:27 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/12/09 17:35:27 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+18/12/09 17:35:27 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+18/12/09 17:35:27 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+18/12/09 17:35:27 INFO ObjectStore: Initialized ObjectStore
+18/12/09 17:35:27 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+18/12/09 17:35:27 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+18/12/09 17:35:27 INFO HiveMetaStore: Added admin role in metastore
+18/12/09 17:35:27 INFO HiveMetaStore: Added public role in metastore
+18/12/09 17:35:27 INFO HiveMetaStore: No user is added in admin role, since config is empty
+18/12/09 17:35:27 INFO HiveMetaStore: 0: get_all_databases
+18/12/09 17:35:27 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_all_databases	
+18/12/09 17:35:27 INFO HiveMetaStore: 0: get_functions: db=default pat=*
+18/12/09 17:35:27 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+18/12/09 17:35:27 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+18/12/09 17:35:28 INFO SessionState: Created HDFS directory: /tmp/hive/Raul
+18/12/09 17:35:28 INFO SessionState: Created local directory: /var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/a27d0473-8813-48aa-9db9-5a1000aa89e8_resources
+18/12/09 17:35:28 INFO SessionState: Created HDFS directory: /tmp/hive/Raul/a27d0473-8813-48aa-9db9-5a1000aa89e8
+18/12/09 17:35:28 INFO SessionState: Created local directory: /var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/Raul/a27d0473-8813-48aa-9db9-5a1000aa89e8
+18/12/09 17:35:28 INFO SessionState: Created HDFS directory: /tmp/hive/Raul/a27d0473-8813-48aa-9db9-5a1000aa89e8/_tmp_space.db
+18/12/09 17:35:28 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.1) is file:/Users/Raul/Desktop/Working/spark/spark-warehouse
+18/12/09 17:35:28 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:28 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:28 INFO HiveMetaStore: 0: get_database: global_temp
+18/12/09 17:35:28 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: global_temp	
+18/12/09 17:35:28 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+18/12/09 17:35:28 INFO SessionState: Created local directory: /var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/e23ece8e-b898-4c36-bf5c-84ab953f2177_resources
+18/12/09 17:35:28 INFO SessionState: Created HDFS directory: /tmp/hive/Raul/e23ece8e-b898-4c36-bf5c-84ab953f2177
+18/12/09 17:35:28 INFO SessionState: Created local directory: /var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/Raul/e23ece8e-b898-4c36-bf5c-84ab953f2177
+18/12/09 17:35:28 INFO SessionState: Created HDFS directory: /tmp/hive/Raul/e23ece8e-b898-4c36-bf5c-84ab953f2177/_tmp_space.db
+18/12/09 17:35:28 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.1) is file:/Users/Raul/Desktop/Working/spark/spark-warehouse
+18/12/09 17:35:28 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+18/12/09 17:35:28 INFO SparkSqlParser: Parsing command: SHOW TABLES
+18/12/09 17:35:29 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:29 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:29 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:29 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:29 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+18/12/09 17:35:29 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+18/12/09 17:35:29 INFO SparkContext: Starting job: collect at utils.scala:44
+18/12/09 17:35:30 INFO DAGScheduler: Got job 0 (collect at utils.scala:44) with 1 output partitions
+18/12/09 17:35:30 INFO DAGScheduler: Final stage: ResultStage 0 (collect at utils.scala:44)
+18/12/09 17:35:30 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:30 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:30 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[4] at map at utils.scala:41), which has no missing parents
+18/12/09 17:35:30 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 5.9 KB, free 366.3 MB)
+18/12/09 17:35:30 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 3.3 KB, free 366.3 MB)
+18/12/09 17:35:30 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 127.0.0.1:57729 (size: 3.3 KB, free: 366.3 MB)
+18/12/09 17:35:30 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:30 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[4] at map at utils.scala:41) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:30 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+18/12/09 17:35:30 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4852 bytes)
+18/12/09 17:35:30 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/12/09 17:35:30 INFO Executor: Fetching spark://127.0.0.1:57727/jars/sparklyr-2.2-2.11.jar with timestamp 1544398523367
+18/12/09 17:35:30 INFO TransportClientFactory: Successfully created connection to /127.0.0.1:57727 after 9 ms (0 ms spent in bootstraps)
+18/12/09 17:35:30 INFO Utils: Fetching spark://127.0.0.1:57727/jars/sparklyr-2.2-2.11.jar to /private/var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/spark-ec741405-64dd-42e2-993a-ea8d81d73da1/userFiles-dd508d6b-88a7-4fae-bcfa-c5e68667ddd1/fetchFileTemp3767318655737703668.tmp
+18/12/09 17:35:30 INFO Executor: Adding file:/private/var/folders/76/7hng50qx7mldfw7fgyykp22r0000gp/T/spark-ec741405-64dd-42e2-993a-ea8d81d73da1/userFiles-dd508d6b-88a7-4fae-bcfa-c5e68667ddd1/sparklyr-2.2-2.11.jar to class loader
+18/12/09 17:35:30 INFO CodeGenerator: Code generated in 185.452996 ms
+18/12/09 17:35:30 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1013 bytes result sent to driver
+18/12/09 17:35:30 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 428 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:30 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/12/09 17:35:30 INFO DAGScheduler: ResultStage 0 (collect at utils.scala:44) finished in 0.445 s
+18/12/09 17:35:30 INFO DAGScheduler: Job 0 finished: collect at utils.scala:44, took 0.603130 s
+18/12/09 17:35:34 INFO SparkSqlParser: Parsing command: flights
+18/12/09 17:35:34 INFO SparkSqlParser: Parsing command: CACHE TABLE `flights`
+18/12/09 17:35:34 INFO SparkSqlParser: Parsing command: `flights`
+18/12/09 17:35:34 INFO CodeGenerator: Code generated in 14.477182 ms
+18/12/09 17:35:34 INFO CodeGenerator: Code generated in 7.206606 ms
+18/12/09 17:35:34 INFO SparkContext: Starting job: sql at NativeMethodAccessorImpl.java:0
+18/12/09 17:35:34 INFO DAGScheduler: Registering RDD 12 (sql at NativeMethodAccessorImpl.java:0)
+18/12/09 17:35:34 INFO DAGScheduler: Got job 1 (sql at NativeMethodAccessorImpl.java:0) with 1 output partitions
+18/12/09 17:35:34 INFO DAGScheduler: Final stage: ResultStage 2 (sql at NativeMethodAccessorImpl.java:0)
+18/12/09 17:35:34 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+18/12/09 17:35:34 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+18/12/09 17:35:34 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[12] at sql at NativeMethodAccessorImpl.java:0), which has no missing parents
+18/12/09 17:35:34 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 30.8 KB, free 366.3 MB)
+18/12/09 17:35:34 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 11.8 KB, free 366.2 MB)
+18/12/09 17:35:34 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 127.0.0.1:57729 (size: 11.8 KB, free: 366.3 MB)
+18/12/09 17:35:34 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:34 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[12] at sql at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:34 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+18/12/09 17:35:34 WARN TaskSetManager: Stage 1 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:35:34 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364176 bytes)
+18/12/09 17:35:34 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+18/12/09 17:35:35 INFO CodeGenerator: Code generated in 17.746724 ms
+18/12/09 17:35:35 INFO CodeGenerator: Code generated in 68.356212 ms
+18/12/09 17:35:36 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 127.0.0.1:57729 in memory (size: 3.3 KB, free: 366.3 MB)
+18/12/09 17:35:36 INFO ContextCleaner: Cleaned accumulator 0
+18/12/09 17:35:36 INFO ContextCleaner: Cleaned accumulator 51
+18/12/09 17:35:37 INFO MemoryStore: Block rdd_9_0 stored as values in memory (estimated size 22.5 MB, free 343.8 MB)
+18/12/09 17:35:37 INFO BlockManagerInfo: Added rdd_9_0 in memory on 127.0.0.1:57729 (size: 22.5 MB, free: 343.8 MB)
+18/12/09 17:35:37 INFO CodeGenerator: Code generated in 3.207804 ms
+18/12/09 17:35:37 INFO CodeGenerator: Code generated in 11.664713 ms
+18/12/09 17:35:37 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2371 bytes result sent to driver
+18/12/09 17:35:37 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2731 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:37 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+18/12/09 17:35:37 INFO DAGScheduler: ShuffleMapStage 1 (sql at NativeMethodAccessorImpl.java:0) finished in 2.732 s
+18/12/09 17:35:37 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:35:37 INFO DAGScheduler: running: Set()
+18/12/09 17:35:37 INFO DAGScheduler: waiting: Set(ResultStage 2)
+18/12/09 17:35:37 INFO DAGScheduler: failed: Set()
+18/12/09 17:35:37 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[15] at sql at NativeMethodAccessorImpl.java:0), which has no missing parents
+18/12/09 17:35:37 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 7.0 KB, free 343.8 MB)
+18/12/09 17:35:37 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.7 KB, free 343.8 MB)
+18/12/09 17:35:37 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 127.0.0.1:57729 (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:37 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[15] at sql at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:37 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+18/12/09 17:35:37 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:35:37 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+18/12/09 17:35:37 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:35:37 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+18/12/09 17:35:37 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1581 bytes result sent to driver
+18/12/09 17:35:37 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 29 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:37 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+18/12/09 17:35:37 INFO DAGScheduler: ResultStage 2 (sql at NativeMethodAccessorImpl.java:0) finished in 0.030 s
+18/12/09 17:35:37 INFO DAGScheduler: Job 1 finished: sql at NativeMethodAccessorImpl.java:0, took 2.803145 s
+18/12/09 17:35:37 INFO SparkSqlParser: Parsing command: SELECT count(*) FROM  `flights`
+18/12/09 17:35:37 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:37 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:37 INFO CodeGenerator: Code generated in 4.482576 ms
+18/12/09 17:35:37 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:37 INFO DAGScheduler: Registering RDD 18 (collect at utils.scala:200)
+18/12/09 17:35:37 INFO DAGScheduler: Got job 2 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:37 INFO DAGScheduler: Final stage: ResultStage 4 (collect at utils.scala:200)
+18/12/09 17:35:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+18/12/09 17:35:37 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+18/12/09 17:35:37 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[18] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:37 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 30.8 KB, free 343.7 MB)
+18/12/09 17:35:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 11.7 KB, free 343.7 MB)
+18/12/09 17:35:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 127.0.0.1:57729 (size: 11.7 KB, free: 343.8 MB)
+18/12/09 17:35:37 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:37 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[18] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:37 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+18/12/09 17:35:37 INFO ContextCleaner: Cleaned accumulator 112
+18/12/09 17:35:37 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 127.0.0.1:57729 in memory (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:37 WARN TaskSetManager: Stage 3 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:35:37 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364176 bytes)
+18/12/09 17:35:37 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+18/12/09 17:35:37 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:35:37 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1733 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 283 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ShuffleMapStage 3 (collect at utils.scala:200) finished in 0.283 s
+18/12/09 17:35:38 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:35:38 INFO DAGScheduler: running: Set()
+18/12/09 17:35:38 INFO DAGScheduler: waiting: Set(ResultStage 4)
+18/12/09 17:35:38 INFO DAGScheduler: failed: Set()
+18/12/09 17:35:38 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[21] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 7.0 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.7 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 127.0.0.1:57729 (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:38 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[21] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+18/12/09 17:35:38 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:35:38 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+18/12/09 17:35:38 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:35:38 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:35:38 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1581 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 4 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ResultStage 4 (collect at utils.scala:200) finished in 0.004 s
+18/12/09 17:35:38 INFO DAGScheduler: Job 2 finished: collect at utils.scala:200, took 0.300432 s
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights` AS `zzz1`
+WHERE (0 = 1)
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SHOW TABLES
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+18/12/09 17:35:38 INFO CodeGenerator: Code generated in 4.337801 ms
+18/12/09 17:35:38 INFO SparkContext: Starting job: collect at utils.scala:44
+18/12/09 17:35:38 INFO DAGScheduler: Got job 3 (collect at utils.scala:44) with 1 output partitions
+18/12/09 17:35:38 INFO DAGScheduler: Final stage: ResultStage 5 (collect at utils.scala:44)
+18/12/09 17:35:38 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:38 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:38 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[26] at map at utils.scala:41), which has no missing parents
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 5.9 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.3 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 127.0.0.1:57729 (size: 3.3 KB, free: 343.8 MB)
+18/12/09 17:35:38 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[26] at map at utils.scala:41) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+18/12/09 17:35:38 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 5011 bytes)
+18/12/09 17:35:38 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+18/12/09 17:35:38 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 980 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 3 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ResultStage 5 (collect at utils.scala:44) finished in 0.004 s
+18/12/09 17:35:38 INFO DAGScheduler: Job 3 finished: collect at utils.scala:44, took 0.008530 s
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: airlines
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: CACHE TABLE `airlines`
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: `airlines`
+18/12/09 17:35:38 INFO SparkContext: Starting job: sql at NativeMethodAccessorImpl.java:0
+18/12/09 17:35:38 INFO DAGScheduler: Registering RDD 34 (sql at NativeMethodAccessorImpl.java:0)
+18/12/09 17:35:38 INFO DAGScheduler: Got job 4 (sql at NativeMethodAccessorImpl.java:0) with 1 output partitions
+18/12/09 17:35:38 INFO DAGScheduler: Final stage: ResultStage 7 (sql at NativeMethodAccessorImpl.java:0)
+18/12/09 17:35:38 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 6)
+18/12/09 17:35:38 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 6)
+18/12/09 17:35:38 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[34] at sql at NativeMethodAccessorImpl.java:0), which has no missing parents
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 15.6 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 7.7 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 127.0.0.1:57729 (size: 7.7 KB, free: 343.8 MB)
+18/12/09 17:35:38 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:38 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[34] at sql at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+18/12/09 17:35:38 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 5221 bytes)
+18/12/09 17:35:38 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+18/12/09 17:35:38 INFO CodeGenerator: Code generated in 4.444806 ms
+18/12/09 17:35:38 INFO CodeGenerator: Code generated in 10.938897 ms
+18/12/09 17:35:38 INFO MemoryStore: Block rdd_31_0 stored as values in memory (estimated size 1000.0 B, free 343.7 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added rdd_31_0 in memory on 127.0.0.1:57729 (size: 1000.0 B, free: 343.8 MB)
+18/12/09 17:35:38 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 2285 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 26 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ShuffleMapStage 6 (sql at NativeMethodAccessorImpl.java:0) finished in 0.026 s
+18/12/09 17:35:38 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:35:38 INFO DAGScheduler: running: Set()
+18/12/09 17:35:38 INFO DAGScheduler: waiting: Set(ResultStage 7)
+18/12/09 17:35:38 INFO DAGScheduler: failed: Set()
+18/12/09 17:35:38 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[37] at sql at NativeMethodAccessorImpl.java:0), which has no missing parents
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 7.0 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 3.7 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 127.0.0.1:57729 (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:38 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[37] at sql at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+18/12/09 17:35:38 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 7, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:35:38 INFO Executor: Running task 0.0 in stage 7.0 (TID 7)
+18/12/09 17:35:38 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:35:38 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:35:38 INFO Executor: Finished task 0.0 in stage 7.0 (TID 7). 1577 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 7) in 3 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ResultStage 7 (sql at NativeMethodAccessorImpl.java:0) finished in 0.004 s
+18/12/09 17:35:38 INFO DAGScheduler: Job 4 finished: sql at NativeMethodAccessorImpl.java:0, took 0.039885 s
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SELECT count(*) FROM  `airlines`
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:38 INFO DAGScheduler: Registering RDD 40 (collect at utils.scala:200)
+18/12/09 17:35:38 INFO DAGScheduler: Got job 5 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:38 INFO DAGScheduler: Final stage: ResultStage 9 (collect at utils.scala:200)
+18/12/09 17:35:38 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+18/12/09 17:35:38 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 8)
+18/12/09 17:35:38 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[40] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 15.6 KB, free 343.7 MB)
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 7.7 KB, free 343.6 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 127.0.0.1:57729 (size: 7.7 KB, free: 343.8 MB)
+18/12/09 17:35:38 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:38 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[40] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+18/12/09 17:35:38 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 8, localhost, executor driver, partition 0, PROCESS_LOCAL, 5221 bytes)
+18/12/09 17:35:38 INFO Executor: Running task 0.0 in stage 8.0 (TID 8)
+18/12/09 17:35:38 INFO BlockManager: Found block rdd_31_0 locally
+18/12/09 17:35:38 INFO Executor: Finished task 0.0 in stage 8.0 (TID 8). 1690 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 8) in 6 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ShuffleMapStage 8 (collect at utils.scala:200) finished in 0.006 s
+18/12/09 17:35:38 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:35:38 INFO DAGScheduler: running: Set()
+18/12/09 17:35:38 INFO DAGScheduler: waiting: Set(ResultStage 9)
+18/12/09 17:35:38 INFO DAGScheduler: failed: Set()
+18/12/09 17:35:38 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[43] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 7.0 KB, free 343.6 MB)
+18/12/09 17:35:38 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.7 KB, free 343.6 MB)
+18/12/09 17:35:38 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 127.0.0.1:57729 (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:38 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[43] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+18/12/09 17:35:38 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 9, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:35:38 INFO Executor: Running task 0.0 in stage 9.0 (TID 9)
+18/12/09 17:35:38 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:35:38 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:35:38 INFO Executor: Finished task 0.0 in stage 9.0 (TID 9). 1577 bytes result sent to driver
+18/12/09 17:35:38 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 9) in 3 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:38 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+18/12/09 17:35:38 INFO DAGScheduler: ResultStage 9 (collect at utils.scala:200) finished in 0.004 s
+18/12/09 17:35:38 INFO DAGScheduler: Job 5 finished: collect at utils.scala:200, took 0.020498 s
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `airlines` AS `zzz2`
+WHERE (0 = 1)
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SHOW TABLES
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+18/12/09 17:35:38 INFO CodeGenerator: Code generated in 5.278636 ms
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SHOW TABLES
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+18/12/09 17:35:38 INFO SparkSqlParser: Parsing command: SHOW TABLES
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:35:38 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+18/12/09 17:35:38 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+18/12/09 17:35:43 INFO SparkSqlParser: Parsing command: SELECT * FROM airlines LIMIT 5
+18/12/09 17:35:43 INFO CodeGenerator: Code generated in 5.190402 ms
+18/12/09 17:35:43 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:43 INFO DAGScheduler: Got job 6 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:43 INFO DAGScheduler: Final stage: ResultStage 10 (collect at utils.scala:200)
+18/12/09 17:35:43 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:43 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:43 INFO DAGScheduler: Submitting ResultStage 10 (MapPartitionsRDD[45] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 11.3 KB, free 343.6 MB)
+18/12/09 17:35:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 5.8 KB, free 343.6 MB)
+18/12/09 17:35:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 127.0.0.1:57729 (size: 5.8 KB, free: 343.7 MB)
+18/12/09 17:35:43 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 10 (MapPartitionsRDD[45] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:43 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks
+18/12/09 17:35:43 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 10, localhost, executor driver, partition 0, PROCESS_LOCAL, 5232 bytes)
+18/12/09 17:35:43 INFO Executor: Running task 0.0 in stage 10.0 (TID 10)
+18/12/09 17:35:43 INFO BlockManager: Found block rdd_31_0 locally
+18/12/09 17:35:43 INFO CodeGenerator: Code generated in 9.746165 ms
+18/12/09 17:35:43 INFO Executor: 1 block locks were not released by TID = 10:
+[rdd_31_0]
+18/12/09 17:35:43 INFO Executor: Finished task 0.0 in stage 10.0 (TID 10). 1368 bytes result sent to driver
+18/12/09 17:35:43 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 10) in 29 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:43 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+18/12/09 17:35:43 INFO DAGScheduler: ResultStage 10 (collect at utils.scala:200) finished in 0.029 s
+18/12/09 17:35:43 INFO DAGScheduler: Job 6 finished: collect at utils.scala:200, took 0.033814 s
+18/12/09 17:35:44 INFO SparkSqlParser: Parsing command: SELECT * FROM airlines LIMIT 5
+18/12/09 17:35:44 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:44 INFO DAGScheduler: Got job 7 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:44 INFO DAGScheduler: Final stage: ResultStage 11 (collect at utils.scala:200)
+18/12/09 17:35:44 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:44 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:44 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[47] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:44 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 11.3 KB, free 343.6 MB)
+18/12/09 17:35:44 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 5.8 KB, free 343.6 MB)
+18/12/09 17:35:44 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 127.0.0.1:57729 (size: 5.8 KB, free: 343.7 MB)
+18/12/09 17:35:44 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[47] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:44 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+18/12/09 17:35:44 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 11, localhost, executor driver, partition 0, PROCESS_LOCAL, 5232 bytes)
+18/12/09 17:35:44 INFO Executor: Running task 0.0 in stage 11.0 (TID 11)
+18/12/09 17:35:44 INFO BlockManager: Found block rdd_31_0 locally
+18/12/09 17:35:44 INFO Executor: 1 block locks were not released by TID = 11:
+[rdd_31_0]
+18/12/09 17:35:44 INFO Executor: Finished task 0.0 in stage 11.0 (TID 11). 1368 bytes result sent to driver
+18/12/09 17:35:44 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 11) in 3 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:44 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+18/12/09 17:35:44 INFO DAGScheduler: ResultStage 11 (collect at utils.scala:200) finished in 0.004 s
+18/12/09 17:35:44 INFO DAGScheduler: Job 7 finished: collect at utils.scala:200, took 0.009972 s
+18/12/09 17:35:46 INFO SparkSqlParser: Parsing command: SELECT * FROM flights LIMIT 5
+18/12/09 17:35:46 INFO CodeGenerator: Code generated in 12.361257 ms
+18/12/09 17:35:46 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:46 INFO DAGScheduler: Got job 8 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:46 INFO DAGScheduler: Final stage: ResultStage 12 (collect at utils.scala:200)
+18/12/09 17:35:46 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:46 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:46 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[49] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:46 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 26.5 KB, free 343.6 MB)
+18/12/09 17:35:46 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 9.7 KB, free 343.6 MB)
+18/12/09 17:35:46 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 127.0.0.1:57729 (size: 9.7 KB, free: 343.7 MB)
+18/12/09 17:35:46 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:46 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[49] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:46 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 200
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 208
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 210
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 203
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 209
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 204
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 127.0.0.1:57729 in memory (size: 5.8 KB, free: 343.7 MB)
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 211
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 173
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned shuffle 2
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 205
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 127.0.0.1:57729 in memory (size: 5.8 KB, free: 343.7 MB)
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 207
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 127.0.0.1:57729 in memory (size: 3.7 KB, free: 343.7 MB)
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 201
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 127.0.0.1:57729 in memory (size: 7.7 KB, free: 343.8 MB)
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 127.0.0.1:57729 in memory (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 261
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 202
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 212
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 127.0.0.1:57729 in memory (size: 7.7 KB, free: 343.8 MB)
+18/12/09 17:35:46 INFO ContextCleaner: Cleaned accumulator 206
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 127.0.0.1:57729 in memory (size: 3.3 KB, free: 343.8 MB)
+18/12/09 17:35:46 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 127.0.0.1:57729 in memory (size: 3.7 KB, free: 343.8 MB)
+18/12/09 17:35:46 WARN TaskSetManager: Stage 12 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:35:46 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 12, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:35:46 INFO Executor: Running task 0.0 in stage 12.0 (TID 12)
+18/12/09 17:35:46 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:35:46 INFO CodeGenerator: Code generated in 9.400998 ms
+18/12/09 17:35:46 INFO Executor: 1 block locks were not released by TID = 12:
+[rdd_9_0]
+18/12/09 17:35:46 INFO Executor: Finished task 0.0 in stage 12.0 (TID 12). 1692 bytes result sent to driver
+18/12/09 17:35:46 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 12) in 265 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:46 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+18/12/09 17:35:46 INFO DAGScheduler: ResultStage 12 (collect at utils.scala:200) finished in 0.265 s
+18/12/09 17:35:46 INFO DAGScheduler: Job 8 finished: collect at utils.scala:200, took 0.271123 s
+18/12/09 17:35:49 INFO SparkSqlParser: Parsing command: SELECT * FROM airlines LIMIT 1000
+18/12/09 17:35:49 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:49 INFO DAGScheduler: Got job 9 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:49 INFO DAGScheduler: Final stage: ResultStage 13 (collect at utils.scala:200)
+18/12/09 17:35:49 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:49 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:49 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[51] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:49 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 11.3 KB, free 343.7 MB)
+18/12/09 17:35:49 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 5.8 KB, free 343.7 MB)
+18/12/09 17:35:49 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 127.0.0.1:57729 (size: 5.8 KB, free: 343.8 MB)
+18/12/09 17:35:49 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 13 (MapPartitionsRDD[51] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:49 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks
+18/12/09 17:35:49 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 13, localhost, executor driver, partition 0, PROCESS_LOCAL, 5232 bytes)
+18/12/09 17:35:49 INFO Executor: Running task 0.0 in stage 13.0 (TID 13)
+18/12/09 17:35:49 INFO BlockManager: Found block rdd_31_0 locally
+18/12/09 17:35:49 INFO Executor: Finished task 0.0 in stage 13.0 (TID 13). 1663 bytes result sent to driver
+18/12/09 17:35:49 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 13) in 3 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:49 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+18/12/09 17:35:49 INFO DAGScheduler: ResultStage 13 (collect at utils.scala:200) finished in 0.004 s
+18/12/09 17:35:49 INFO DAGScheduler: Job 9 finished: collect at utils.scala:200, took 0.009774 s
+18/12/09 17:35:58 INFO SparkSqlParser: Parsing command: SELECT * FROM flights LIMIT 1000
+18/12/09 17:35:58 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:35:58 INFO DAGScheduler: Got job 10 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:35:58 INFO DAGScheduler: Final stage: ResultStage 14 (collect at utils.scala:200)
+18/12/09 17:35:58 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:35:58 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:35:58 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[53] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:35:58 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 26.5 KB, free 343.6 MB)
+18/12/09 17:35:58 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 9.8 KB, free 343.6 MB)
+18/12/09 17:35:58 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 127.0.0.1:57729 (size: 9.8 KB, free: 343.8 MB)
+18/12/09 17:35:58 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:35:58 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[53] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:35:58 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks
+18/12/09 17:35:58 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 127.0.0.1:57729 in memory (size: 5.8 KB, free: 343.8 MB)
+18/12/09 17:35:58 INFO ContextCleaner: Cleaned accumulator 397
+18/12/09 17:35:58 WARN TaskSetManager: Stage 14 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:35:58 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 14, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:35:58 INFO Executor: Running task 0.0 in stage 14.0 (TID 14)
+18/12/09 17:35:58 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:35:58 INFO Executor: 1 block locks were not released by TID = 14:
+[rdd_9_0]
+18/12/09 17:35:58 INFO Executor: Finished task 0.0 in stage 14.0 (TID 14). 60639 bytes result sent to driver
+18/12/09 17:35:58 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 14) in 263 ms on localhost (executor driver) (1/1)
+18/12/09 17:35:58 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+18/12/09 17:35:58 INFO DAGScheduler: ResultStage 14 (collect at utils.scala:200) finished in 0.263 s
+18/12/09 17:35:58 INFO DAGScheduler: Job 10 finished: collect at utils.scala:200, took 0.268606 s
+18/12/09 17:37:26 INFO SparkSqlParser: Parsing command: SHOW TABLES
+18/12/09 17:37:26 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:37:26 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:37:26 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:37:26 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:37:26 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+18/12/09 17:37:26 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+18/12/09 17:37:26 INFO SparkContext: Starting job: collect at utils.scala:44
+18/12/09 17:37:26 INFO DAGScheduler: Got job 11 (collect at utils.scala:44) with 2 output partitions
+18/12/09 17:37:26 INFO DAGScheduler: Final stage: ResultStage 15 (collect at utils.scala:44)
+18/12/09 17:37:26 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:37:26 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:37:26 INFO DAGScheduler: Submitting ResultStage 15 (MapPartitionsRDD[58] at map at utils.scala:41), which has no missing parents
+18/12/09 17:37:26 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 5.9 KB, free 343.6 MB)
+18/12/09 17:37:26 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 3.3 KB, free 343.6 MB)
+18/12/09 17:37:26 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 127.0.0.1:57729 (size: 3.3 KB, free: 343.8 MB)
+18/12/09 17:37:26 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:37:26 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 15 (MapPartitionsRDD[58] at map at utils.scala:41) (first 15 tasks are for partitions Vector(0, 1))
+18/12/09 17:37:26 INFO TaskSchedulerImpl: Adding task set 15.0 with 2 tasks
+18/12/09 17:37:26 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 15, localhost, executor driver, partition 0, PROCESS_LOCAL, 5011 bytes)
+18/12/09 17:37:26 INFO TaskSetManager: Starting task 1.0 in stage 15.0 (TID 16, localhost, executor driver, partition 1, PROCESS_LOCAL, 5011 bytes)
+18/12/09 17:37:26 INFO Executor: Running task 0.0 in stage 15.0 (TID 15)
+18/12/09 17:37:26 INFO Executor: Running task 1.0 in stage 15.0 (TID 16)
+18/12/09 17:37:26 INFO Executor: Finished task 0.0 in stage 15.0 (TID 15). 981 bytes result sent to driver
+18/12/09 17:37:26 INFO Executor: Finished task 1.0 in stage 15.0 (TID 16). 980 bytes result sent to driver
+18/12/09 17:37:26 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 15) in 4 ms on localhost (executor driver) (1/2)
+18/12/09 17:37:26 INFO TaskSetManager: Finished task 1.0 in stage 15.0 (TID 16) in 4 ms on localhost (executor driver) (2/2)
+18/12/09 17:37:26 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+18/12/09 17:37:26 INFO DAGScheduler: ResultStage 15 (collect at utils.scala:44) finished in 0.005 s
+18/12/09 17:37:26 INFO DAGScheduler: Job 11 finished: collect at utils.scala:44, took 0.008813 s
+18/12/09 17:38:17 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `arr_delay`, `dep_delay`
+FROM `flights`
+18/12/09 17:38:17 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `arr_delay`, `dep_delay`
+FROM `flights`
+18/12/09 17:38:17 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `arr_delay`, `dep_delay`
+FROM `flights`
+LIMIT 10
+18/12/09 17:38:17 INFO CodeGenerator: Code generated in 5.206303 ms
+18/12/09 17:38:17 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:38:17 INFO DAGScheduler: Got job 12 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:38:17 INFO DAGScheduler: Final stage: ResultStage 16 (collect at utils.scala:200)
+18/12/09 17:38:17 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:38:17 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:38:17 INFO DAGScheduler: Submitting ResultStage 16 (MapPartitionsRDD[60] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:38:17 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 26.7 KB, free 343.6 MB)
+18/12/09 17:38:17 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 9.8 KB, free 343.6 MB)
+18/12/09 17:38:17 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 127.0.0.1:57729 (size: 9.8 KB, free: 343.7 MB)
+18/12/09 17:38:17 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:38:17 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 16 (MapPartitionsRDD[60] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:38:17 INFO TaskSchedulerImpl: Adding task set 16.0 with 1 tasks
+18/12/09 17:38:17 INFO ContextCleaner: Cleaned accumulator 447
+18/12/09 17:38:17 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 127.0.0.1:57729 in memory (size: 3.3 KB, free: 343.8 MB)
+18/12/09 17:38:17 WARN TaskSetManager: Stage 16 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:38:17 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 17, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:38:17 INFO Executor: Running task 0.0 in stage 16.0 (TID 17)
+18/12/09 17:38:17 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:38:17 INFO CodeGenerator: Code generated in 7.805605 ms
+18/12/09 17:38:17 INFO Executor: 1 block locks were not released by TID = 17:
+[rdd_9_0]
+18/12/09 17:38:17 INFO Executor: Finished task 0.0 in stage 16.0 (TID 17). 1374 bytes result sent to driver
+18/12/09 17:38:17 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 17) in 258 ms on localhost (executor driver) (1/1)
+18/12/09 17:38:17 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+18/12/09 17:38:17 INFO DAGScheduler: ResultStage 16 (collect at utils.scala:200) finished in 0.258 s
+18/12/09 17:38:17 INFO DAGScheduler: Job 12 finished: collect at utils.scala:200, took 0.262993 s
+18/12/09 17:38:17 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `arr_delay`, `dep_delay`
+FROM `flights`
+18/12/09 17:39:02 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+WHERE (`dep_delay` > 1000.0)
+18/12/09 17:39:02 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+WHERE (`dep_delay` > 1000.0)
+18/12/09 17:39:02 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+WHERE (`dep_delay` > 1000.0)
+LIMIT 10
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Predicate isnotnull(dep_delay#34) generates partition filter: ((dep_delay.count#1027 - dep_delay.nullCount#1026) > 0)
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Predicate (dep_delay#34 > 1000.0) generates partition filter: (1000.0 < dep_delay.upperBound#1024)
+18/12/09 17:39:02 INFO CodeGenerator: Code generated in 10.652195 ms
+18/12/09 17:39:02 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:39:02 INFO DAGScheduler: Got job 13 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:39:02 INFO DAGScheduler: Final stage: ResultStage 17 (collect at utils.scala:200)
+18/12/09 17:39:02 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:39:02 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:39:02 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[63] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:39:02 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 34.6 KB, free 343.6 MB)
+18/12/09 17:39:02 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 12.5 KB, free 343.6 MB)
+18/12/09 17:39:02 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 127.0.0.1:57729 (size: 12.5 KB, free: 343.7 MB)
+18/12/09 17:39:02 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:39:02 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 17 (MapPartitionsRDD[63] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:39:02 INFO TaskSchedulerImpl: Adding task set 17.0 with 1 tasks
+18/12/09 17:39:02 WARN TaskSetManager: Stage 17 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:39:02 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 18, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:39:02 INFO Executor: Running task 0.0 in stage 17.0 (TID 18)
+18/12/09 17:39:02 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:39:02 INFO CodeGenerator: Code generated in 4.786304 ms
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 1, month.upperBound: 1, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 12, day.upperBound: 23, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 120, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -22.0, dep_delay.upperBound: 599.0, dep_delay.nullCount: 120, dep_delay.count: 10000, dep_delay.sizeInBytes: 79520, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 123, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 2, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -64.0, arr_delay.upperBound: 612.0, arr_delay.nullCount: 144, arr_delay.count: 10000, arr_delay.sizeInBytes: 79424, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6055, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99725, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 20.0, air_time.upperBound: 659.0, air_time.nullCount: 144, air_time.count: 10000, air_time.sizeInBytes: 79424, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1357988400000000, time_hour.upperBound: 1358996400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 1, month.upperBound: 10, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 31, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 352, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -27.0, dep_delay.upperBound: 360.0, dep_delay.nullCount: 352, dep_delay.count: 10000, dep_delay.sizeInBytes: 78592, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 359, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 2, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -62.0, arr_delay.upperBound: 370.0, arr_delay.nullCount: 385, arr_delay.count: 10000, arr_delay.sizeInBytes: 78460, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 8500, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99590, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 660.0, air_time.nullCount: 385, air_time.count: 10000, air_time.sizeInBytes: 78460, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1358953200000000, time_hour.upperBound: 1380942000000000, time_hour.nullCount: 2, time_hour.count: 10000, time_hour.sizeInBytes: 79992
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 10, month.upperBound: 10, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 4, day.upperBound: 14, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 6, dep_time.upperBound: 2359, dep_time.nullCount: 165, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -18.0, dep_delay.upperBound: 702.0, dep_delay.nullCount: 165, dep_delay.count: 10000, dep_delay.sizeInBytes: 79340, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 168, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -59.0, arr_delay.upperBound: 688.0, arr_delay.nullCount: 174, arr_delay.count: 10000, arr_delay.sizeInBytes: 79304, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99753, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 642.0, air_time.nullCount: 174, air_time.count: 10000, air_time.sizeInBytes: 79304, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1380877200000000, time_hour.upperBound: 1381798800000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 10, month.upperBound: 10, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 14, day.upperBound: 25, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 9, dep_time.upperBound: 2357, dep_time.nullCount: 33, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -25.0, dep_delay.upperBound: 390.0, dep_delay.nullCount: 33, dep_delay.count: 10000, dep_delay.sizeInBytes: 79868, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 36, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 2, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -60.0, arr_delay.upperBound: 381.0, arr_delay.nullCount: 47, arr_delay.count: 10000, arr_delay.sizeInBytes: 79812, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99867, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 635.0, air_time.nullCount: 47, air_time.count: 10000, air_time.sizeInBytes: 79812, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1381759200000000, time_hour.upperBound: 1382756400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 10, month.upperBound: 11, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 31, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 4, dep_time.upperBound: 2400, dep_time.nullCount: 80, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -23.0, dep_delay.upperBound: 798.0, dep_delay.nullCount: 80, dep_delay.count: 10000, dep_delay.sizeInBytes: 79680, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 93, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -61.0, arr_delay.upperBound: 796.0, arr_delay.nullCount: 108, arr_delay.count: 10000, arr_delay.sizeInBytes: 79568, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99876, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 636.0, air_time.nullCount: 108, air_time.count: 10000, air_time.sizeInBytes: 79568, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1382695200000000, time_hour.upperBound: 1383710400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 11, month.upperBound: 11, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 5, day.upperBound: 16, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 64, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -32.0, dep_delay.upperBound: 367.0, dep_delay.nullCount: 64, dep_delay.count: 10000, dep_delay.sizeInBytes: 79744, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 69, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 3, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -67.0, arr_delay.upperBound: 345.0, arr_delay.nullCount: 80, arr_delay.count: 10000, arr_delay.sizeInBytes: 79680, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99857, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 24.0, air_time.upperBound: 676.0, air_time.nullCount: 80, air_time.count: 10000, air_time.sizeInBytes: 79680, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1383652800000000, time_hour.upperBound: 1384606800000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 11, month.upperBound: 11, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 16, day.upperBound: 27, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 3, dep_time.upperBound: 2359, dep_time.nullCount: 80, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -23.0, dep_delay.upperBound: 636.0, dep_delay.nullCount: 80, dep_delay.count: 10000, dep_delay.sizeInBytes: 79680, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 86, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 3, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -56.0, arr_delay.upperBound: 614.0, arr_delay.nullCount: 106, arr_delay.count: 10000, arr_delay.sizeInBytes: 79576, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99842, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 25.0, air_time.upperBound: 675.0, air_time.nullCount: 106, air_time.count: 10000, air_time.sizeInBytes: 79576, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1384599600000000, time_hour.upperBound: 1385596800000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 11, month.upperBound: 12, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 30, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 3, dep_time.upperBound: 2400, dep_time.nullCount: 297, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -43.0, dep_delay.upperBound: 896.0, dep_delay.nullCount: 297, dep_delay.count: 10000, dep_delay.sizeInBytes: 78812, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 302, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -57.0, arr_delay.upperBound: 878.0, arr_delay.nullCount: 327, arr_delay.count: 10000, arr_delay.sizeInBytes: 78692, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99695, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 661.0, air_time.nullCount: 327, air_time.count: 10000, air_time.sizeInBytes: 78692, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1385546400000000, time_hour.upperBound: 1386561600000000, time_hour.nullCount: 45, time_hour.count: 10000, time_hour.sizeInBytes: 79820
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 12, month.upperBound: 12, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 8, day.upperBound: 19, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 645, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -20.0, dep_delay.upperBound: 849.0, dep_delay.nullCount: 645, dep_delay.count: 10000, dep_delay.sizeInBytes: 77420, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 664, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 8, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -51.0, arr_delay.upperBound: 856.0, arr_delay.nullCount: 686, arr_delay.count: 10000, arr_delay.sizeInBytes: 77256, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99248, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 22.0, air_time.upperBound: 653.0, air_time.nullCount: 686, air_time.count: 10000, air_time.sizeInBytes: 77256, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1386500400000000, time_hour.upperBound: 1387512000000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 12, month.upperBound: 12, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 19, day.upperBound: 30, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 91, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -23.0, dep_delay.upperBound: 486.0, dep_delay.nullCount: 91, dep_delay.count: 10000, dep_delay.sizeInBytes: 79636, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 101, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 3, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -68.0, arr_delay.upperBound: 469.0, arr_delay.nullCount: 112, arr_delay.count: 10000, arr_delay.sizeInBytes: 79552, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99893, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 26.0, air_time.upperBound: 644.0, air_time.nullCount: 112, air_time.count: 10000, air_time.sizeInBytes: 79552, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1387450800000000, time_hour.upperBound: 1388462400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 2, month.upperBound: 12, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 31, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 995, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -33.0, dep_delay.upperBound: 853.0, dep_delay.nullCount: 995, dep_delay.count: 10000, dep_delay.sizeInBytes: 76020, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 1006, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -60.0, arr_delay.upperBound: 834.0, arr_delay.nullCount: 1022, arr_delay.count: 10000, arr_delay.sizeInBytes: 75912, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 98482, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 691.0, air_time.nullCount: 1022, air_time.count: 10000, air_time.sizeInBytes: 75912, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1359712800000000, time_hour.upperBound: 1388548800000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 2, month.upperBound: 2, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 11, day.upperBound: 22, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 3, dep_time.upperBound: 2400, dep_time.nullCount: 172, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -20.0, dep_delay.upperBound: 788.0, dep_delay.nullCount: 172, dep_delay.count: 10000, dep_delay.sizeInBytes: 79312, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 183, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -70.0, arr_delay.upperBound: 767.0, arr_delay.nullCount: 200, arr_delay.count: 10000, arr_delay.sizeInBytes: 79200, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6171, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: D942DN, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99711, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 649.0, air_time.nullCount: 200, air_time.count: 10000, air_time.sizeInBytes: 79200, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1360584000000000, time_hour.upperBound: 1361592000000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 2, month.upperBound: 3, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 28, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 170, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -24.0, dep_delay.upperBound: 786.0, dep_delay.nullCount: 170, dep_delay.count: 10000, dep_delay.sizeInBytes: 79320, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 181, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 5, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -70.0, arr_delay.upperBound: 773.0, arr_delay.nullCount: 200, arr_delay.count: 10000, arr_delay.sizeInBytes: 79200, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6165, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99757, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 654.0, air_time.nullCount: 200, air_time.count: 10000, air_time.sizeInBytes: 79200, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1361530800000000, time_hour.upperBound: 1362488400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 3, month.upperBound: 3, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 5, day.upperBound: 15, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 573, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -20.0, dep_delay.upperBound: 470.0, dep_delay.nullCount: 573, dep_delay.count: 10000, dep_delay.sizeInBytes: 77708, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 585, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 4, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -66.0, arr_delay.upperBound: 436.0, arr_delay.nullCount: 597, arr_delay.count: 10000, arr_delay.sizeInBytes: 77612, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 5968, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99297, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 686.0, air_time.nullCount: 597, air_time.count: 10000, air_time.sizeInBytes: 77612, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1362481200000000, time_hour.upperBound: 1363402800000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 3, month.upperBound: 3, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 15, day.upperBound: 26, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 222, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -22.0, dep_delay.upperBound: 911.0, dep_delay.nullCount: 222, dep_delay.count: 10000, dep_delay.sizeInBytes: 79112, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 234, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -62.0, arr_delay.upperBound: 915.0, arr_delay.nullCount: 256, arr_delay.count: 10000, arr_delay.sizeInBytes: 78976, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6180, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: D942DN, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99714, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 695.0, air_time.nullCount: 256, air_time.count: 10000, air_time.sizeInBytes: 78976, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1363341600000000, time_hour.upperBound: 1364353200000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 3, month.upperBound: 4, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 31, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 40, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -25.0, dep_delay.upperBound: 545.0, dep_delay.nullCount: 40, dep_delay.count: 10000, dep_delay.sizeInBytes: 79840, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 43, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -62.0, arr_delay.upperBound: 560.0, arr_delay.nullCount: 55, arr_delay.count: 10000, arr_delay.sizeInBytes: 79780, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6180, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99839, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 671.0, air_time.nullCount: 55, air_time.count: 10000, air_time.sizeInBytes: 79780, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1364310000000000, time_hour.upperBound: 1365242400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 4, month.upperBound: 4, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 6, day.upperBound: 16, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 256, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -21.0, dep_delay.upperBound: 960.0, dep_delay.nullCount: 256, dep_delay.count: 10000, dep_delay.sizeInBytes: 78976, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 281, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -63.0, arr_delay.upperBound: 931.0, arr_delay.nullCount: 298, arr_delay.count: 10000, arr_delay.sizeInBytes: 78808, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 5793, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99681, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ALB, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 20.0, air_time.upperBound: 666.0, air_time.nullCount: 298, air_time.count: 10000, air_time.sizeInBytes: 78808, distance.lowerBound: 80.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1365238800000000, time_hour.upperBound: 1366149600000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 4, month.upperBound: 4, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 16, day.upperBound: 27, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2400, dep_time.nullCount: 381, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -19.0, dep_delay.upperBound: 812.0, dep_delay.nullCount: 381, dep_delay.count: 10000, dep_delay.sizeInBytes: 78476, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 397, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -56.0, arr_delay.upperBound: 821.0, arr_delay.nullCount: 422, arr_delay.count: 10000, arr_delay.sizeInBytes: 78312, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 5793, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99471, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 22.0, air_time.upperBound: 639.0, air_time.nullCount: 422, air_time.count: 10000, air_time.sizeInBytes: 78312, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1366124400000000, time_hour.upperBound: 1367067600000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 4, month.upperBound: 5, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 30, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2359, dep_time.nullCount: 43, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -24.0, dep_delay.upperBound: 878.0, dep_delay.nullCount: 43, dep_delay.count: 10000, dep_delay.sizeInBytes: 79828, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 50, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -86.0, arr_delay.upperBound: 875.0, arr_delay.nullCount: 73, arr_delay.count: 10000, arr_delay.sizeInBytes: 79708, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 5791, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99889, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 613.0, air_time.nullCount: 73, air_time.count: 10000, air_time.sizeInBytes: 79708, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1367064000000000, time_hour.upperBound: 1368068400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 5, month.upperBound: 5, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 8, day.upperBound: 18, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2359, dep_time.nullCount: 159, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -24.0, dep_delay.upperBound: 533.0, dep_delay.nullCount: 159, dep_delay.count: 10000, dep_delay.sizeInBytes: 79364, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 163, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -71.0, arr_delay.upperBound: 499.0, arr_delay.nullCount: 178, arr_delay.count: 10000, arr_delay.sizeInBytes: 79288, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 5769, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99754, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 22.0, air_time.upperBound: 640.0, air_time.nullCount: 178, air_time.count: 10000, air_time.sizeInBytes: 79288, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1368007200000000, time_hour.upperBound: 1368932400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 5, month.upperBound: 5, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 18, day.upperBound: 29, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 343, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -23.0, dep_delay.upperBound: 853.0, dep_delay.nullCount: 343, dep_delay.count: 10000, dep_delay.sizeInBytes: 78628, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 365, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -79.0, arr_delay.upperBound: 852.0, arr_delay.nullCount: 399, arr_delay.count: 10000, arr_delay.sizeInBytes: 78404, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 5769, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99619, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 637.0, air_time.nullCount: 399, air_time.count: 10000, air_time.sizeInBytes: 78404, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1368907200000000, time_hour.upperBound: 1369864800000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 5, month.upperBound: 6, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 31, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2359, dep_time.nullCount: 215, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -21.0, dep_delay.upperBound: 613.0, dep_delay.nullCount: 215, dep_delay.count: 10000, dep_delay.sizeInBytes: 79140, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 229, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -64.0, arr_delay.upperBound: 598.0, arr_delay.nullCount: 265, arr_delay.count: 10000, arr_delay.sizeInBytes: 78940, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99689, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 22.0, air_time.upperBound: 622.0, air_time.nullCount: 265, air_time.count: 10000, air_time.sizeInBytes: 78940, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1369850400000000, time_hour.upperBound: 1370804400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 6, month.upperBound: 6, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 19, day.upperBound: 30, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2359, dep_time.nullCount: 456, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -17.0, dep_delay.upperBound: 899.0, dep_delay.nullCount: 456, dep_delay.count: 10000, dep_delay.sizeInBytes: 78176, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 490, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -62.0, arr_delay.upperBound: 850.0, arr_delay.nullCount: 523, arr_delay.count: 10000, arr_delay.sizeInBytes: 77908, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99371, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 628.0, air_time.nullCount: 523, air_time.count: 10000, air_time.sizeInBytes: 77908, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1371636000000000, time_hour.upperBound: 1372647600000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 6, month.upperBound: 7, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 30, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 461, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -21.0, dep_delay.upperBound: 653.0, dep_delay.nullCount: 461, dep_delay.count: 10000, dep_delay.sizeInBytes: 78156, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 523, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -60.0, arr_delay.upperBound: 676.0, arr_delay.nullCount: 541, arr_delay.count: 10000, arr_delay.sizeInBytes: 77836, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: D942DN, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99393, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 24.0, air_time.upperBound: 621.0, air_time.nullCount: 541, air_time.count: 10000, air_time.sizeInBytes: 77836, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1372590000000000, time_hour.upperBound: 1373598000000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 7, month.upperBound: 7, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 11, day.upperBound: 21, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2400, dep_time.nullCount: 181, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -20.0, dep_delay.upperBound: 580.0, dep_delay.nullCount: 181, dep_delay.count: 10000, dep_delay.sizeInBytes: 79276, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 193, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -66.0, arr_delay.upperBound: 645.0, arr_delay.nullCount: 244, arr_delay.count: 10000, arr_delay.sizeInBytes: 79024, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99730, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 629.0, air_time.nullCount: 244, air_time.count: 10000, air_time.sizeInBytes: 79024, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1373536800000000, time_hour.upperBound: 1374462000000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 8, month.upperBound: 8, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 11, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2400, dep_time.nullCount: 241, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -26.0, dep_delay.upperBound: 520.0, dep_delay.nullCount: 241, dep_delay.count: 10000, dep_delay.sizeInBytes: 79036, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 247, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -58.0, arr_delay.upperBound: 490.0, arr_delay.nullCount: 280, arr_delay.count: 10000, arr_delay.sizeInBytes: 78880, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99653, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 25.0, air_time.upperBound: 640.0, air_time.nullCount: 280, air_time.count: 10000, air_time.sizeInBytes: 78880, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1375351200000000, time_hour.upperBound: 1376276400000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 8, month.upperBound: 8, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 11, day.upperBound: 21, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 1, dep_time.upperBound: 2400, dep_time.nullCount: 106, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -21.0, dep_delay.upperBound: 508.0, dep_delay.nullCount: 106, dep_delay.count: 10000, dep_delay.sizeInBytes: 79576, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 114, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -68.0, arr_delay.upperBound: 469.0, arr_delay.nullCount: 129, arr_delay.count: 10000, arr_delay.sizeInBytes: 79484, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99841, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 631.0, air_time.nullCount: 129, air_time.count: 10000, air_time.sizeInBytes: 79484, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1376218800000000, time_hour.upperBound: 1377140400000000, time_hour.nullCount: 77, time_hour.count: 10000, time_hour.sizeInBytes: 79692
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 8, month.upperBound: 9, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 1, day.upperBound: 31, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 3, dep_time.upperBound: 2359, dep_time.nullCount: 140, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -23.0, dep_delay.upperBound: 696.0, dep_delay.nullCount: 140, dep_delay.count: 10000, dep_delay.sizeInBytes: 79440, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 146, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -66.0, arr_delay.upperBound: 674.0, arr_delay.nullCount: 168, arr_delay.count: 10000, arr_delay.sizeInBytes: 79328, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6177, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99787, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 23.0, air_time.upperBound: 617.0, air_time.nullCount: 168, air_time.count: 10000, air_time.sizeInBytes: 79328, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1377126000000000, time_hour.upperBound: 1378177200000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 10000, year.sizeInBytes: 40000, month.lowerBound: 9, month.upperBound: 9, month.nullCount: 0, month.count: 10000, month.sizeInBytes: 40000, day.lowerBound: 2, day.upperBound: 12, day.nullCount: 0, day.count: 10000, day.sizeInBytes: 40000, dep_time.lowerBound: 2, dep_time.upperBound: 2400, dep_time.nullCount: 153, dep_time.count: 10000, dep_time.sizeInBytes: 40000, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 10000, sched_dep_time.sizeInBytes: 40000, dep_delay.lowerBound: -21.0, dep_delay.upperBound: 602.0, dep_delay.nullCount: 153, dep_delay.count: 10000, dep_delay.sizeInBytes: 79388, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 197, arr_time.count: 10000, arr_time.sizeInBytes: 40000, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 10000, sched_arr_time.sizeInBytes: 40000, arr_delay.lowerBound: -68.0, arr_delay.upperBound: 572.0, arr_delay.nullCount: 220, arr_delay.count: 10000, arr_delay.sizeInBytes: 79120, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 10000, carrier.sizeInBytes: 60000, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 10000, flight.sizeInBytes: 40000, tailnum.lowerBound: N0EGMQ, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 10000, tailnum.sizeInBytes: 99760, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 10000, origin.sizeInBytes: 70000, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 10000, dest.sizeInBytes: 70000, air_time.lowerBound: 21.0, air_time.upperBound: 616.0, air_time.nullCount: 220, air_time.count: 10000, air_time.sizeInBytes: 79120, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 10000, distance.sizeInBytes: 80000, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 10000, hour.sizeInBytes: 80000, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 10000, minute.sizeInBytes: 80000, time_hour.lowerBound: 1378116000000000, time_hour.upperBound: 1379041200000000, time_hour.nullCount: 0, time_hour.count: 10000, time_hour.sizeInBytes: 80000
+18/12/09 17:39:02 INFO InMemoryTableScanExec: Skipping partition based on stats year.lowerBound: 2013, year.upperBound: 2013, year.nullCount: 0, year.count: 6776, year.sizeInBytes: 27104, month.lowerBound: 9, month.upperBound: 9, month.nullCount: 0, month.count: 6776, month.sizeInBytes: 27104, day.lowerBound: 23, day.upperBound: 30, day.nullCount: 0, day.count: 6776, day.sizeInBytes: 27104, dep_time.lowerBound: 451, dep_time.upperBound: 2358, dep_time.nullCount: 43, dep_time.count: 6776, dep_time.sizeInBytes: 27104, sched_dep_time.lowerBound: 500, sched_dep_time.upperBound: 2359, sched_dep_time.nullCount: 0, sched_dep_time.count: 6776, sched_dep_time.sizeInBytes: 27104, dep_delay.lowerBound: -20.0, dep_delay.upperBound: 422.0, dep_delay.nullCount: 43, dep_delay.count: 6776, dep_delay.sizeInBytes: 54036, arr_time.lowerBound: 1, arr_time.upperBound: 2400, arr_time.nullCount: 47, arr_time.count: 6776, arr_time.sizeInBytes: 27104, sched_arr_time.lowerBound: 1, sched_arr_time.upperBound: 2359, sched_arr_time.nullCount: 0, sched_arr_time.count: 6776, sched_arr_time.sizeInBytes: 27104, arr_delay.lowerBound: -65.0, arr_delay.upperBound: 405.0, arr_delay.nullCount: 57, arr_delay.count: 6776, arr_delay.sizeInBytes: 53980, carrier.lowerBound: 9E, carrier.upperBound: YV, carrier.nullCount: 0, carrier.count: 6776, carrier.sizeInBytes: 40656, flight.lowerBound: 1, flight.upperBound: 6181, flight.nullCount: 0, flight.count: 6776, flight.sizeInBytes: 27104, tailnum.lowerBound: N10156, tailnum.upperBound: NA, tailnum.nullCount: 0, tailnum.count: 6776, tailnum.sizeInBytes: 67679, origin.lowerBound: EWR, origin.upperBound: LGA, origin.nullCount: 0, origin.count: 6776, origin.sizeInBytes: 47432, dest.lowerBound: ABQ, dest.upperBound: XNA, dest.nullCount: 0, dest.count: 6776, dest.sizeInBytes: 47432, air_time.lowerBound: 23.0, air_time.upperBound: 636.0, air_time.nullCount: 57, air_time.count: 6776, air_time.sizeInBytes: 53980, distance.lowerBound: 94.0, distance.upperBound: 4983.0, distance.nullCount: 0, distance.count: 6776, distance.sizeInBytes: 54208, hour.lowerBound: 5.0, hour.upperBound: 23.0, hour.nullCount: 0, hour.count: 6776, hour.sizeInBytes: 54208, minute.lowerBound: 0.0, minute.upperBound: 59.0, minute.nullCount: 0, minute.count: 6776, minute.sizeInBytes: 54208, time_hour.lowerBound: 1379930400000000, time_hour.upperBound: 1380596400000000, time_hour.nullCount: 0, time_hour.count: 6776, time_hour.sizeInBytes: 54208
+18/12/09 17:39:02 INFO Executor: Finished task 0.0 in stage 17.0 (TID 18). 1909 bytes result sent to driver
+18/12/09 17:39:02 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 18) in 293 ms on localhost (executor driver) (1/1)
+18/12/09 17:39:02 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool 
+18/12/09 17:39:02 INFO DAGScheduler: ResultStage 17 (collect at utils.scala:200) finished in 0.294 s
+18/12/09 17:39:02 INFO DAGScheduler: Job 13 finished: collect at utils.scala:200, took 0.302062 s
+18/12/09 17:39:02 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+WHERE (`dep_delay` > 1000.0)
+18/12/09 17:39:18 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+ORDER BY `dep_delay` DESC
+18/12/09 17:39:18 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+ORDER BY `dep_delay` DESC
+18/12/09 17:39:18 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+ORDER BY `dep_delay` DESC
+LIMIT 10
+18/12/09 17:39:18 INFO CodeGenerator: Code generated in 7.986231 ms
+18/12/09 17:39:18 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:39:18 INFO DAGScheduler: Got job 14 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:39:18 INFO DAGScheduler: Final stage: ResultStage 18 (collect at utils.scala:200)
+18/12/09 17:39:18 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:39:18 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:39:18 INFO DAGScheduler: Submitting ResultStage 18 (MapPartitionsRDD[66] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:39:18 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 27.8 KB, free 343.5 MB)
+18/12/09 17:39:18 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 10.3 KB, free 343.5 MB)
+18/12/09 17:39:18 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 127.0.0.1:57729 (size: 10.3 KB, free: 343.7 MB)
+18/12/09 17:39:18 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:39:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 18 (MapPartitionsRDD[66] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:39:18 INFO TaskSchedulerImpl: Adding task set 18.0 with 1 tasks
+18/12/09 17:39:18 WARN TaskSetManager: Stage 18 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:39:18 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 19, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:39:18 INFO Executor: Running task 0.0 in stage 18.0 (TID 19)
+18/12/09 17:39:18 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:39:18 INFO Executor: Finished task 0.0 in stage 18.0 (TID 19). 4832 bytes result sent to driver
+18/12/09 17:39:18 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 19) in 377 ms on localhost (executor driver) (1/1)
+18/12/09 17:39:18 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+18/12/09 17:39:18 INFO DAGScheduler: ResultStage 18 (collect at utils.scala:200) finished in 0.378 s
+18/12/09 17:39:18 INFO DAGScheduler: Job 14 finished: collect at utils.scala:200, took 0.384029 s
+18/12/09 17:39:18 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `flights`
+ORDER BY `dep_delay` DESC
+18/12/09 17:39:31 INFO SparkSqlParser: Parsing command: SELECT AVG(`dep_delay`) AS `mean_dep_delay`
+FROM `flights`
+18/12/09 17:39:31 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:39:31 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:39:32 INFO SparkSqlParser: Parsing command: SELECT AVG(`dep_delay`) AS `mean_dep_delay`
+FROM `flights`
+18/12/09 17:39:32 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:39:32 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:39:32 INFO SparkSqlParser: Parsing command: SELECT AVG(`dep_delay`) AS `mean_dep_delay`
+FROM `flights`
+LIMIT 10
+18/12/09 17:39:32 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:39:32 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:39:32 INFO CodeGenerator: Code generated in 4.369422 ms
+18/12/09 17:39:32 INFO CodeGenerator: Code generated in 6.002176 ms
+18/12/09 17:39:32 INFO CodeGenerator: Code generated in 5.255667 ms
+18/12/09 17:39:32 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:39:32 INFO DAGScheduler: Registering RDD 69 (collect at utils.scala:200)
+18/12/09 17:39:32 INFO DAGScheduler: Got job 15 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:39:32 INFO DAGScheduler: Final stage: ResultStage 20 (collect at utils.scala:200)
+18/12/09 17:39:32 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 19)
+18/12/09 17:39:32 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 19)
+18/12/09 17:39:32 INFO DAGScheduler: Submitting ShuffleMapStage 19 (MapPartitionsRDD[69] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:39:32 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 32.3 KB, free 343.5 MB)
+18/12/09 17:39:32 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 12.5 KB, free 343.5 MB)
+18/12/09 17:39:32 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 127.0.0.1:57729 (size: 12.5 KB, free: 343.7 MB)
+18/12/09 17:39:32 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:39:32 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 19 (MapPartitionsRDD[69] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:39:32 INFO TaskSchedulerImpl: Adding task set 19.0 with 1 tasks
+18/12/09 17:39:32 INFO ContextCleaner: Cleaned accumulator 549
+18/12/09 17:39:32 WARN TaskSetManager: Stage 19 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:39:32 INFO TaskSetManager: Starting task 0.0 in stage 19.0 (TID 20, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364176 bytes)
+18/12/09 17:39:32 INFO Executor: Running task 0.0 in stage 19.0 (TID 20)
+18/12/09 17:39:32 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:39:32 INFO CodeGenerator: Code generated in 6.420247 ms
+18/12/09 17:39:32 INFO Executor: Finished task 0.0 in stage 19.0 (TID 20). 1733 bytes result sent to driver
+18/12/09 17:39:32 INFO TaskSetManager: Finished task 0.0 in stage 19.0 (TID 20) in 317 ms on localhost (executor driver) (1/1)
+18/12/09 17:39:32 INFO TaskSchedulerImpl: Removed TaskSet 19.0, whose tasks have all completed, from pool 
+18/12/09 17:39:32 INFO DAGScheduler: ShuffleMapStage 19 (collect at utils.scala:200) finished in 0.318 s
+18/12/09 17:39:32 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:39:32 INFO DAGScheduler: running: Set()
+18/12/09 17:39:32 INFO DAGScheduler: waiting: Set(ResultStage 20)
+18/12/09 17:39:32 INFO DAGScheduler: failed: Set()
+18/12/09 17:39:32 INFO DAGScheduler: Submitting ResultStage 20 (MapPartitionsRDD[72] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:39:32 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 8.1 KB, free 343.5 MB)
+18/12/09 17:39:32 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 4.2 KB, free 343.5 MB)
+18/12/09 17:39:32 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 127.0.0.1:57729 (size: 4.2 KB, free: 343.7 MB)
+18/12/09 17:39:32 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:39:32 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 20 (MapPartitionsRDD[72] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:39:32 INFO TaskSchedulerImpl: Adding task set 20.0 with 1 tasks
+18/12/09 17:39:32 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 21, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:39:32 INFO Executor: Running task 0.0 in stage 20.0 (TID 21)
+18/12/09 17:39:32 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:39:32 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+18/12/09 17:39:32 INFO Executor: Finished task 0.0 in stage 20.0 (TID 21). 1557 bytes result sent to driver
+18/12/09 17:39:32 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 21) in 4 ms on localhost (executor driver) (1/1)
+18/12/09 17:39:32 INFO TaskSchedulerImpl: Removed TaskSet 20.0, whose tasks have all completed, from pool 
+18/12/09 17:39:32 INFO DAGScheduler: ResultStage 20 (collect at utils.scala:200) finished in 0.004 s
+18/12/09 17:39:32 INFO DAGScheduler: Job 15 finished: collect at utils.scala:200, took 0.331231 s
+18/12/09 17:39:32 INFO SparkSqlParser: Parsing command: SELECT AVG(`dep_delay`) AS `mean_dep_delay`
+FROM `flights`
+18/12/09 17:39:32 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:39:32 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:39:42 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `dep_time`, `sched_dep_time`, `dep_delay`, `arr_time`, `sched_arr_time`, `arr_delay`, `carrier`, `flight`, `tailnum`, `origin`, `dest`, `air_time`, `distance`, `hour`, `minute`, `time_hour`, `distance` / `air_time` * 60.0 AS `speed`
+FROM `flights`
+18/12/09 17:39:42 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `dep_time`, `sched_dep_time`, `dep_delay`, `arr_time`, `sched_arr_time`, `arr_delay`, `carrier`, `flight`, `tailnum`, `origin`, `dest`, `air_time`, `distance`, `hour`, `minute`, `time_hour`, `distance` / `air_time` * 60.0 AS `speed`
+FROM `flights`
+18/12/09 17:39:42 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `dep_time`, `sched_dep_time`, `dep_delay`, `arr_time`, `sched_arr_time`, `arr_delay`, `carrier`, `flight`, `tailnum`, `origin`, `dest`, `air_time`, `distance`, `hour`, `minute`, `time_hour`, `distance` / `air_time` * 60.0 AS `speed`
+FROM `flights`
+LIMIT 10
+18/12/09 17:39:42 INFO CodeGenerator: Code generated in 9.510281 ms
+18/12/09 17:39:42 INFO CodeGenerator: Code generated in 5.443473 ms
+18/12/09 17:39:42 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:39:42 INFO DAGScheduler: Got job 16 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:39:42 INFO DAGScheduler: Final stage: ResultStage 21 (collect at utils.scala:200)
+18/12/09 17:39:42 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:39:42 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:39:42 INFO DAGScheduler: Submitting ResultStage 21 (MapPartitionsRDD[75] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:39:42 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 35.2 KB, free 343.4 MB)
+18/12/09 17:39:42 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 12.5 KB, free 343.4 MB)
+18/12/09 17:39:42 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 127.0.0.1:57729 (size: 12.5 KB, free: 343.7 MB)
+18/12/09 17:39:42 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:39:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 21 (MapPartitionsRDD[75] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:39:42 INFO TaskSchedulerImpl: Adding task set 21.0 with 1 tasks
+18/12/09 17:39:42 INFO BlockManagerInfo: Removed broadcast_20_piece0 on 127.0.0.1:57729 in memory (size: 4.2 KB, free: 343.7 MB)
+18/12/09 17:39:42 WARN TaskSetManager: Stage 21 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:39:42 INFO TaskSetManager: Starting task 0.0 in stage 21.0 (TID 22, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:39:42 INFO Executor: Running task 0.0 in stage 21.0 (TID 22)
+18/12/09 17:39:42 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:39:42 INFO CodeGenerator: Code generated in 7.459857 ms
+18/12/09 17:39:42 INFO Executor: 1 block locks were not released by TID = 22:
+[rdd_9_0]
+18/12/09 17:39:42 INFO Executor: Finished task 0.0 in stage 21.0 (TID 22). 2172 bytes result sent to driver
+18/12/09 17:39:42 INFO TaskSetManager: Finished task 0.0 in stage 21.0 (TID 22) in 257 ms on localhost (executor driver) (1/1)
+18/12/09 17:39:42 INFO TaskSchedulerImpl: Removed TaskSet 21.0, whose tasks have all completed, from pool 
+18/12/09 17:39:42 INFO DAGScheduler: ResultStage 21 (collect at utils.scala:200) finished in 0.257 s
+18/12/09 17:39:42 INFO DAGScheduler: Job 16 finished: collect at utils.scala:200, took 0.261817 s
+18/12/09 17:39:42 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `dep_time`, `sched_dep_time`, `dep_delay`, `arr_time`, `sched_arr_time`, `arr_delay`, `carrier`, `flight`, `tailnum`, `origin`, `dest`, `air_time`, `distance`, `hour`, `minute`, `time_hour`, `distance` / `air_time` * 60.0 AS `speed`
+FROM `flights`
+18/12/09 17:40:07 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `aqsxicjdex`) `rrqjuydfsy`
+ORDER BY `year`, `month`, `day`, `carrier`) `gfdgzjfdnp`
+18/12/09 17:40:07 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `tznfmlwdqm`) `osdvwwifec`
+ORDER BY `year`, `month`, `day`, `carrier`) `pwcufczgwn`
+18/12/09 17:40:07 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `gfxnupzose`) `nlmnywsyol`
+ORDER BY `year`, `month`, `day`, `carrier`) `dpcfhjubrn`
+LIMIT 10
+18/12/09 17:40:07 INFO InMemoryTableScanExec: Predicate isnotnull(day#31) generates partition filter: ((day.count#1630 - day.nullCount#1629) > 0)
+18/12/09 17:40:07 INFO InMemoryTableScanExec: Predicate isnotnull(month#30) generates partition filter: ((month.count#1625 - month.nullCount#1624) > 0)
+18/12/09 17:40:07 INFO InMemoryTableScanExec: Predicate carrier#38 IN (UA,WN,AA,DL) generates partition filter: (((((carrier.lowerBound#1663 <= UA) && (UA <= carrier.upperBound#1662)) || ((carrier.lowerBound#1663 <= WN) && (WN <= carrier.upperBound#1662))) || ((carrier.lowerBound#1663 <= AA) && (AA <= carrier.upperBound#1662))) || ((carrier.lowerBound#1663 <= DL) && (DL <= carrier.upperBound#1662)))
+18/12/09 17:40:07 INFO CodeGenerator: Code generated in 4.655112 ms
+18/12/09 17:40:07 INFO CodeGenerator: Code generated in 4.773883 ms
+18/12/09 17:40:07 INFO CodeGenerator: Code generated in 5.589201 ms
+18/12/09 17:40:07 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:40:07 INFO DAGScheduler: Got job 17 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:40:07 INFO DAGScheduler: Final stage: ResultStage 22 (collect at utils.scala:200)
+18/12/09 17:40:07 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:40:07 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:40:07 INFO DAGScheduler: Submitting ResultStage 22 (MapPartitionsRDD[79] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:40:07 INFO MemoryStore: Block broadcast_22 stored as values in memory (estimated size 38.0 KB, free 343.4 MB)
+18/12/09 17:40:07 INFO MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 14.5 KB, free 343.4 MB)
+18/12/09 17:40:07 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 127.0.0.1:57729 (size: 14.5 KB, free: 343.7 MB)
+18/12/09 17:40:07 INFO SparkContext: Created broadcast 22 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:40:07 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 22 (MapPartitionsRDD[79] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:40:07 INFO TaskSchedulerImpl: Adding task set 22.0 with 1 tasks
+18/12/09 17:40:07 WARN TaskSetManager: Stage 22 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:40:07 INFO TaskSetManager: Starting task 0.0 in stage 22.0 (TID 23, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:40:07 INFO Executor: Running task 0.0 in stage 22.0 (TID 23)
+18/12/09 17:40:07 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:40:07 INFO CodeGenerator: Code generated in 4.532685 ms
+18/12/09 17:40:07 INFO CodeGenerator: Code generated in 5.953079 ms
+18/12/09 17:40:07 INFO Executor: Finished task 0.0 in stage 22.0 (TID 23). 3902 bytes result sent to driver
+18/12/09 17:40:07 INFO TaskSetManager: Finished task 0.0 in stage 22.0 (TID 23) in 503 ms on localhost (executor driver) (1/1)
+18/12/09 17:40:07 INFO TaskSchedulerImpl: Removed TaskSet 22.0, whose tasks have all completed, from pool 
+18/12/09 17:40:07 INFO DAGScheduler: ResultStage 22 (collect at utils.scala:200) finished in 0.503 s
+18/12/09 17:40:07 INFO DAGScheduler: Job 17 finished: collect at utils.scala:200, took 0.521452 s
+18/12/09 17:40:07 INFO CodeGenerator: Code generated in 4.432796 ms
+18/12/09 17:40:07 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `ykqeoayysq`) `botrwxiixc`
+ORDER BY `year`, `month`, `day`, `carrier`) `gfepqiqmyf`
+18/12/09 17:43:33 INFO SparkSqlParser: Parsing command: SELECT `carrier`, count(*) AS `count`, AVG(`dep_delay`) AS `mean_dep_delay`
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`month` = 5.0) AND (`day` = 17.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `meqkvlkcjc`) `rwduoeokmh`
+ORDER BY `carrier`) `rfcszheftt`) `ghhvpgenpd`
+GROUP BY `carrier`
+18/12/09 17:43:33 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:33 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:33 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:33 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:33 INFO SparkSqlParser: Parsing command: SELECT `carrier`, count(*) AS `count`, AVG(`dep_delay`) AS `mean_dep_delay`
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`month` = 5.0) AND (`day` = 17.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `xoerkdltrd`) `yhvveoijrt`
+ORDER BY `carrier`) `kfjueowhtf`) `nctwgpnfyl`
+GROUP BY `carrier`
+18/12/09 17:43:33 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:33 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:33 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:33 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:33 INFO SparkSqlParser: Parsing command: SELECT `carrier`, count(*) AS `count`, AVG(`dep_delay`) AS `mean_dep_delay`
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`month` = 5.0) AND (`day` = 17.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `bxtnadsrdj`) `mxbdyjqkgw`
+ORDER BY `carrier`) `ncavzbgvms`) `cqyxiekxaf`
+GROUP BY `carrier`
+LIMIT 10
+18/12/09 17:43:33 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:33 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:33 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:33 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:33 INFO InMemoryTableScanExec: Predicate isnotnull(day#31) generates partition filter: ((day.count#1762 - day.nullCount#1761) > 0)
+18/12/09 17:43:33 INFO InMemoryTableScanExec: Predicate isnotnull(month#30) generates partition filter: ((month.count#1757 - month.nullCount#1756) > 0)
+18/12/09 17:43:33 INFO InMemoryTableScanExec: Predicate carrier#38 IN (UA,WN,AA,DL) generates partition filter: (((((carrier.lowerBound#1795 <= UA) && (UA <= carrier.upperBound#1794)) || ((carrier.lowerBound#1795 <= WN) && (WN <= carrier.upperBound#1794))) || ((carrier.lowerBound#1795 <= AA) && (AA <= carrier.upperBound#1794))) || ((carrier.lowerBound#1795 <= DL) && (DL <= carrier.upperBound#1794)))
+18/12/09 17:43:33 INFO CodeGenerator: Code generated in 4.406414 ms
+18/12/09 17:43:33 INFO CodeGenerator: Code generated in 32.02543 ms
+18/12/09 17:43:33 INFO CodeGenerator: Code generated in 6.877949 ms
+18/12/09 17:43:33 INFO CodeGenerator: Code generated in 3.263356 ms
+18/12/09 17:43:33 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:43:33 INFO DAGScheduler: Got job 18 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:43:33 INFO DAGScheduler: Final stage: ResultStage 23 (collect at utils.scala:200)
+18/12/09 17:43:33 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:43:33 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:43:33 INFO DAGScheduler: Submitting ResultStage 23 (MapPartitionsRDD[84] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:43:33 INFO MemoryStore: Block broadcast_23 stored as values in memory (estimated size 36.8 KB, free 343.4 MB)
+18/12/09 17:43:33 INFO MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 14.2 KB, free 343.3 MB)
+18/12/09 17:43:33 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 127.0.0.1:57729 (size: 14.2 KB, free: 343.7 MB)
+18/12/09 17:43:33 INFO SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:43:33 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 23 (MapPartitionsRDD[84] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:43:33 INFO TaskSchedulerImpl: Adding task set 23.0 with 1 tasks
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned shuffle 3
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 663
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 127.0.0.1:57729 in memory (size: 11.8 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 638
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 124
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 267
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 62
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 113
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 56
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 551
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 123
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 127.0.0.1:57729 in memory (size: 9.8 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 550
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 322
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 266
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 127.0.0.1:57729 in memory (size: 12.5 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 560
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 347
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 63
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 60
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 121
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 555
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 127.0.0.1:57729 in memory (size: 9.8 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 372
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 119
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 127.0.0.1:57729 in memory (size: 10.3 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 57
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 472
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned shuffle 4
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 61
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 264
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 120
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 268
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 273
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 636
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 117
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 554
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 127.0.0.1:57729 in memory (size: 11.7 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 265
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 116
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned shuffle 0
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 114
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 270
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 498
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 127.0.0.1:57729 in memory (size: 12.5 KB, free: 343.8 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 561
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 422
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned shuffle 1
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 637
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 127.0.0.1:57729 in memory (size: 9.7 KB, free: 343.8 MB)
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_21_piece0 on 127.0.0.1:57729 in memory (size: 12.5 KB, free: 343.8 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 58
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 499
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 272
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 55
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 552
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 556
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 54
+18/12/09 17:43:34 INFO BlockManagerInfo: Removed broadcast_22_piece0 on 127.0.0.1:57729 in memory (size: 14.5 KB, free: 343.8 MB)
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 558
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 557
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 53
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 263
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 553
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 269
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 559
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 262
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 115
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 497
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 271
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 52
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 524
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 122
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 118
+18/12/09 17:43:34 INFO ContextCleaner: Cleaned accumulator 59
+18/12/09 17:43:34 WARN TaskSetManager: Stage 23 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 0.0 in stage 23.0 (TID 24, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:43:34 INFO Executor: Running task 0.0 in stage 23.0 (TID 24)
+18/12/09 17:43:34 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:43:34 INFO CodeGenerator: Code generated in 6.715557 ms
+18/12/09 17:43:34 INFO Executor: Finished task 0.0 in stage 23.0 (TID 24). 23257 bytes result sent to driver
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 0.0 in stage 23.0 (TID 24) in 516 ms on localhost (executor driver) (1/1)
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+18/12/09 17:43:34 INFO DAGScheduler: ResultStage 23 (collect at utils.scala:200) finished in 0.517 s
+18/12/09 17:43:34 INFO DAGScheduler: Job 18 finished: collect at utils.scala:200, took 0.520710 s
+18/12/09 17:43:34 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:43:34 INFO DAGScheduler: Registering RDD 85 (collect at utils.scala:200)
+18/12/09 17:43:34 INFO DAGScheduler: Got job 19 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:43:34 INFO DAGScheduler: Final stage: ResultStage 25 (collect at utils.scala:200)
+18/12/09 17:43:34 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 24)
+18/12/09 17:43:34 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 24)
+18/12/09 17:43:34 INFO DAGScheduler: Submitting ShuffleMapStage 24 (MapPartitionsRDD[85] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:43:34 INFO MemoryStore: Block broadcast_24 stored as values in memory (estimated size 38.8 KB, free 343.7 MB)
+18/12/09 17:43:34 INFO MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 15.2 KB, free 343.7 MB)
+18/12/09 17:43:34 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 127.0.0.1:57729 (size: 15.2 KB, free: 343.8 MB)
+18/12/09 17:43:34 INFO SparkContext: Created broadcast 24 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:43:34 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 24 (MapPartitionsRDD[85] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Adding task set 24.0 with 1 tasks
+18/12/09 17:43:34 WARN TaskSetManager: Stage 24 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 0.0 in stage 24.0 (TID 25, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364176 bytes)
+18/12/09 17:43:34 INFO Executor: Running task 0.0 in stage 24.0 (TID 25)
+18/12/09 17:43:34 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:43:34 INFO Executor: Finished task 0.0 in stage 24.0 (TID 25). 1641 bytes result sent to driver
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 0.0 in stage 24.0 (TID 25) in 322 ms on localhost (executor driver) (1/1)
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Removed TaskSet 24.0, whose tasks have all completed, from pool 
+18/12/09 17:43:34 INFO DAGScheduler: ShuffleMapStage 24 (collect at utils.scala:200) finished in 0.322 s
+18/12/09 17:43:34 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:43:34 INFO DAGScheduler: running: Set()
+18/12/09 17:43:34 INFO DAGScheduler: waiting: Set(ResultStage 25)
+18/12/09 17:43:34 INFO DAGScheduler: failed: Set()
+18/12/09 17:43:34 INFO DAGScheduler: Submitting ResultStage 25 (MapPartitionsRDD[88] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:43:34 INFO MemoryStore: Block broadcast_25 stored as values in memory (estimated size 43.6 KB, free 343.7 MB)
+18/12/09 17:43:34 INFO MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 17.4 KB, free 343.6 MB)
+18/12/09 17:43:34 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 127.0.0.1:57729 (size: 17.4 KB, free: 343.8 MB)
+18/12/09 17:43:34 INFO SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:43:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 25 (MapPartitionsRDD[88] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Adding task set 25.0 with 1 tasks
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 0.0 in stage 25.0 (TID 26, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:43:34 INFO Executor: Running task 0.0 in stage 25.0 (TID 26)
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+18/12/09 17:43:34 INFO CodeGenerator: Code generated in 2.92293 ms
+18/12/09 17:43:34 INFO CodeGenerator: Code generated in 3.018282 ms
+18/12/09 17:43:34 INFO CodeGenerator: Code generated in 4.422838 ms
+18/12/09 17:43:34 INFO CodeGenerator: Code generated in 3.090549 ms
+18/12/09 17:43:34 INFO CodeGenerator: Code generated in 2.513367 ms
+18/12/09 17:43:34 INFO Executor: Finished task 0.0 in stage 25.0 (TID 26). 2639 bytes result sent to driver
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 0.0 in stage 25.0 (TID 26) in 60 ms on localhost (executor driver) (1/1)
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Removed TaskSet 25.0, whose tasks have all completed, from pool 
+18/12/09 17:43:34 INFO DAGScheduler: ResultStage 25 (collect at utils.scala:200) finished in 0.061 s
+18/12/09 17:43:34 INFO DAGScheduler: Job 19 finished: collect at utils.scala:200, took 0.391986 s
+18/12/09 17:43:34 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:43:34 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 5 is 148 bytes
+18/12/09 17:43:34 INFO DAGScheduler: Got job 20 (collect at utils.scala:200) with 4 output partitions
+18/12/09 17:43:34 INFO DAGScheduler: Final stage: ResultStage 27 (collect at utils.scala:200)
+18/12/09 17:43:34 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 26)
+18/12/09 17:43:34 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:43:34 INFO DAGScheduler: Submitting ResultStage 27 (MapPartitionsRDD[88] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:43:34 INFO MemoryStore: Block broadcast_26 stored as values in memory (estimated size 43.6 KB, free 343.6 MB)
+18/12/09 17:43:34 INFO MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 17.4 KB, free 343.6 MB)
+18/12/09 17:43:34 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 127.0.0.1:57729 (size: 17.4 KB, free: 343.7 MB)
+18/12/09 17:43:34 INFO SparkContext: Created broadcast 26 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:43:34 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 27 (MapPartitionsRDD[88] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(1, 2, 3, 4))
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Adding task set 27.0 with 4 tasks
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 3.0 in stage 27.0 (TID 27, localhost, executor driver, partition 4, PROCESS_LOCAL, 4726 bytes)
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 0.0 in stage 27.0 (TID 28, localhost, executor driver, partition 1, ANY, 4726 bytes)
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 1.0 in stage 27.0 (TID 29, localhost, executor driver, partition 2, ANY, 4726 bytes)
+18/12/09 17:43:34 INFO TaskSetManager: Starting task 2.0 in stage 27.0 (TID 30, localhost, executor driver, partition 3, ANY, 4726 bytes)
+18/12/09 17:43:34 INFO Executor: Running task 3.0 in stage 27.0 (TID 27)
+18/12/09 17:43:34 INFO Executor: Running task 0.0 in stage 27.0 (TID 28)
+18/12/09 17:43:34 INFO Executor: Running task 1.0 in stage 27.0 (TID 29)
+18/12/09 17:43:34 INFO Executor: Running task 2.0 in stage 27.0 (TID 30)
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Getting 0 non-empty blocks out of 1 blocks
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:43:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+18/12/09 17:43:34 INFO Executor: Finished task 3.0 in stage 27.0 (TID 27). 2601 bytes result sent to driver
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 3.0 in stage 27.0 (TID 27) in 15 ms on localhost (executor driver) (1/4)
+18/12/09 17:43:34 INFO Executor: Finished task 2.0 in stage 27.0 (TID 30). 2637 bytes result sent to driver
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 2.0 in stage 27.0 (TID 30) in 16 ms on localhost (executor driver) (2/4)
+18/12/09 17:43:34 INFO Executor: Finished task 0.0 in stage 27.0 (TID 28). 2637 bytes result sent to driver
+18/12/09 17:43:34 INFO Executor: Finished task 1.0 in stage 27.0 (TID 29). 2639 bytes result sent to driver
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 0.0 in stage 27.0 (TID 28) in 17 ms on localhost (executor driver) (3/4)
+18/12/09 17:43:34 INFO TaskSetManager: Finished task 1.0 in stage 27.0 (TID 29) in 17 ms on localhost (executor driver) (4/4)
+18/12/09 17:43:34 INFO TaskSchedulerImpl: Removed TaskSet 27.0, whose tasks have all completed, from pool 
+18/12/09 17:43:34 INFO DAGScheduler: ResultStage 27 (collect at utils.scala:200) finished in 0.017 s
+18/12/09 17:43:34 INFO DAGScheduler: Job 20 finished: collect at utils.scala:200, took 0.024432 s
+18/12/09 17:43:34 INFO SparkSqlParser: Parsing command: SELECT `carrier`, count(*) AS `count`, AVG(`dep_delay`) AS `mean_dep_delay`
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`month` = 5.0) AND (`day` = 17.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `nixzczxfke`) `cyvhzyplbg`
+ORDER BY `carrier`) `imfvkbpkwn`) `wtzzaftnjb`
+GROUP BY `carrier`
+18/12/09 17:43:34 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:34 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:43:34 INFO HiveMetaStore: 0: get_database: default
+18/12/09 17:43:34 INFO audit: ugi=Raul	ip=unknown-ip-addr	cmd=get_database: default	
+18/12/09 17:45:54 INFO SparkSqlParser: Parsing command: SELECT `carrier`, `dep_delay`, `air_time`, `distance`, `air_time` / 60.0 AS `air_time_hours`
+FROM (SELECT *
+FROM (SELECT `carrier`, `dep_delay`, `air_time`, `distance`
+FROM (SELECT *
+FROM `flights`
+WHERE ((`month` = 5.0) AND (`day` = 17.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))) `juzfxgozhd`) `rynjvkrjwq`
+ORDER BY `carrier`) `hrwulclcem`
+18/12/09 17:45:54 INFO InMemoryTableScanExec: Predicate isnotnull(day#31) generates partition filter: ((day.count#1879 - day.nullCount#1878) > 0)
+18/12/09 17:45:54 INFO InMemoryTableScanExec: Predicate isnotnull(month#30) generates partition filter: ((month.count#1874 - month.nullCount#1873) > 0)
+18/12/09 17:45:54 INFO InMemoryTableScanExec: Predicate carrier#38 IN (UA,WN,AA,DL) generates partition filter: (((((carrier.lowerBound#1912 <= UA) && (UA <= carrier.upperBound#1911)) || ((carrier.lowerBound#1912 <= WN) && (WN <= carrier.upperBound#1911))) || ((carrier.lowerBound#1912 <= AA) && (AA <= carrier.upperBound#1911))) || ((carrier.lowerBound#1912 <= DL) && (DL <= carrier.upperBound#1911)))
+18/12/09 17:45:54 INFO CodeGenerator: Code generated in 4.150732 ms
+18/12/09 17:45:54 INFO CodeGenerator: Code generated in 5.935124 ms
+18/12/09 17:45:54 INFO CodeGenerator: Code generated in 5.174351 ms
+18/12/09 17:45:54 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:45:54 INFO DAGScheduler: Got job 21 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:45:54 INFO DAGScheduler: Final stage: ResultStage 28 (collect at utils.scala:200)
+18/12/09 17:45:54 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:45:54 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:45:54 INFO DAGScheduler: Submitting ResultStage 28 (MapPartitionsRDD[93] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:45:54 INFO MemoryStore: Block broadcast_27 stored as values in memory (estimated size 37.4 KB, free 343.5 MB)
+18/12/09 17:45:54 INFO MemoryStore: Block broadcast_27_piece0 stored as bytes in memory (estimated size 14.2 KB, free 343.5 MB)
+18/12/09 17:45:54 INFO BlockManagerInfo: Added broadcast_27_piece0 in memory on 127.0.0.1:57729 (size: 14.2 KB, free: 343.7 MB)
+18/12/09 17:45:54 INFO SparkContext: Created broadcast 27 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:45:54 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 28 (MapPartitionsRDD[93] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:45:54 INFO TaskSchedulerImpl: Adding task set 28.0 with 1 tasks
+18/12/09 17:45:54 INFO BlockManagerInfo: Removed broadcast_25_piece0 on 127.0.0.1:57729 in memory (size: 17.4 KB, free: 343.7 MB)
+18/12/09 17:45:54 INFO ContextCleaner: Cleaned accumulator 776
+18/12/09 17:45:54 INFO BlockManagerInfo: Removed broadcast_26_piece0 on 127.0.0.1:57729 in memory (size: 17.4 KB, free: 343.8 MB)
+18/12/09 17:45:54 WARN TaskSetManager: Stage 28 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:45:54 INFO TaskSetManager: Starting task 0.0 in stage 28.0 (TID 31, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:45:54 INFO Executor: Running task 0.0 in stage 28.0 (TID 31)
+18/12/09 17:45:55 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:45:55 INFO CodeGenerator: Code generated in 5.204597 ms
+18/12/09 17:45:55 INFO Executor: Finished task 0.0 in stage 28.0 (TID 31). 30222 bytes result sent to driver
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 0.0 in stage 28.0 (TID 31) in 366 ms on localhost (executor driver) (1/1)
+18/12/09 17:45:55 INFO TaskSchedulerImpl: Removed TaskSet 28.0, whose tasks have all completed, from pool 
+18/12/09 17:45:55 INFO DAGScheduler: ResultStage 28 (collect at utils.scala:200) finished in 0.367 s
+18/12/09 17:45:55 INFO DAGScheduler: Job 21 finished: collect at utils.scala:200, took 0.370501 s
+18/12/09 17:45:55 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:45:55 INFO DAGScheduler: Registering RDD 94 (collect at utils.scala:200)
+18/12/09 17:45:55 INFO DAGScheduler: Got job 22 (collect at utils.scala:200) with 5 output partitions
+18/12/09 17:45:55 INFO DAGScheduler: Final stage: ResultStage 30 (collect at utils.scala:200)
+18/12/09 17:45:55 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 29)
+18/12/09 17:45:55 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 29)
+18/12/09 17:45:55 INFO DAGScheduler: Submitting ShuffleMapStage 29 (MapPartitionsRDD[94] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:45:55 INFO MemoryStore: Block broadcast_28 stored as values in memory (estimated size 39.5 KB, free 343.6 MB)
+18/12/09 17:45:55 INFO MemoryStore: Block broadcast_28_piece0 stored as bytes in memory (estimated size 15.4 KB, free 343.6 MB)
+18/12/09 17:45:55 INFO BlockManagerInfo: Added broadcast_28_piece0 in memory on 127.0.0.1:57729 (size: 15.4 KB, free: 343.7 MB)
+18/12/09 17:45:55 INFO SparkContext: Created broadcast 28 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:45:55 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 29 (MapPartitionsRDD[94] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:45:55 INFO TaskSchedulerImpl: Adding task set 29.0 with 1 tasks
+18/12/09 17:45:55 WARN TaskSetManager: Stage 29 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:45:55 INFO TaskSetManager: Starting task 0.0 in stage 29.0 (TID 32, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364176 bytes)
+18/12/09 17:45:55 INFO Executor: Running task 0.0 in stage 29.0 (TID 32)
+18/12/09 17:45:55 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:45:55 INFO Executor: Finished task 0.0 in stage 29.0 (TID 32). 1641 bytes result sent to driver
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 0.0 in stage 29.0 (TID 32) in 336 ms on localhost (executor driver) (1/1)
+18/12/09 17:45:55 INFO TaskSchedulerImpl: Removed TaskSet 29.0, whose tasks have all completed, from pool 
+18/12/09 17:45:55 INFO DAGScheduler: ShuffleMapStage 29 (collect at utils.scala:200) finished in 0.336 s
+18/12/09 17:45:55 INFO DAGScheduler: looking for newly runnable stages
+18/12/09 17:45:55 INFO DAGScheduler: running: Set()
+18/12/09 17:45:55 INFO DAGScheduler: waiting: Set(ResultStage 30)
+18/12/09 17:45:55 INFO DAGScheduler: failed: Set()
+18/12/09 17:45:55 INFO DAGScheduler: Submitting ResultStage 30 (MapPartitionsRDD[97] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:45:55 INFO MemoryStore: Block broadcast_29 stored as values in memory (estimated size 17.7 KB, free 343.6 MB)
+18/12/09 17:45:55 INFO MemoryStore: Block broadcast_29_piece0 stored as bytes in memory (estimated size 8.5 KB, free 343.6 MB)
+18/12/09 17:45:55 INFO BlockManagerInfo: Added broadcast_29_piece0 in memory on 127.0.0.1:57729 (size: 8.5 KB, free: 343.7 MB)
+18/12/09 17:45:55 INFO SparkContext: Created broadcast 29 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:45:55 INFO DAGScheduler: Submitting 5 missing tasks from ResultStage 30 (MapPartitionsRDD[97] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4))
+18/12/09 17:45:55 INFO TaskSchedulerImpl: Adding task set 30.0 with 5 tasks
+18/12/09 17:45:55 INFO TaskSetManager: Starting task 4.0 in stage 30.0 (TID 33, localhost, executor driver, partition 4, PROCESS_LOCAL, 4726 bytes)
+18/12/09 17:45:55 INFO TaskSetManager: Starting task 0.0 in stage 30.0 (TID 34, localhost, executor driver, partition 0, ANY, 4726 bytes)
+18/12/09 17:45:55 INFO TaskSetManager: Starting task 1.0 in stage 30.0 (TID 35, localhost, executor driver, partition 1, ANY, 4726 bytes)
+18/12/09 17:45:55 INFO TaskSetManager: Starting task 2.0 in stage 30.0 (TID 36, localhost, executor driver, partition 2, ANY, 4726 bytes)
+18/12/09 17:45:55 INFO TaskSetManager: Starting task 3.0 in stage 30.0 (TID 37, localhost, executor driver, partition 3, ANY, 4726 bytes)
+18/12/09 17:45:55 INFO Executor: Running task 4.0 in stage 30.0 (TID 33)
+18/12/09 17:45:55 INFO Executor: Running task 0.0 in stage 30.0 (TID 34)
+18/12/09 17:45:55 INFO Executor: Running task 1.0 in stage 30.0 (TID 35)
+18/12/09 17:45:55 INFO Executor: Running task 2.0 in stage 30.0 (TID 36)
+18/12/09 17:45:55 INFO Executor: Running task 3.0 in stage 30.0 (TID 37)
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Getting 0 non-empty blocks out of 1 blocks
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:45:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+18/12/09 17:45:55 INFO Executor: Finished task 4.0 in stage 30.0 (TID 33). 1939 bytes result sent to driver
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 4.0 in stage 30.0 (TID 33) in 7 ms on localhost (executor driver) (1/5)
+18/12/09 17:45:55 INFO Executor: Finished task 3.0 in stage 30.0 (TID 37). 2530 bytes result sent to driver
+18/12/09 17:45:55 INFO Executor: Finished task 0.0 in stage 30.0 (TID 34). 3337 bytes result sent to driver
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 3.0 in stage 30.0 (TID 37) in 7 ms on localhost (executor driver) (2/5)
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 0.0 in stage 30.0 (TID 34) in 7 ms on localhost (executor driver) (3/5)
+18/12/09 17:45:55 INFO Executor: Finished task 1.0 in stage 30.0 (TID 35). 3924 bytes result sent to driver
+18/12/09 17:45:55 INFO Executor: Finished task 2.0 in stage 30.0 (TID 36). 4435 bytes result sent to driver
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 1.0 in stage 30.0 (TID 35) in 8 ms on localhost (executor driver) (4/5)
+18/12/09 17:45:55 INFO TaskSetManager: Finished task 2.0 in stage 30.0 (TID 36) in 8 ms on localhost (executor driver) (5/5)
+18/12/09 17:45:55 INFO TaskSchedulerImpl: Removed TaskSet 30.0, whose tasks have all completed, from pool 
+18/12/09 17:45:55 INFO DAGScheduler: ResultStage 30 (collect at utils.scala:200) finished in 0.009 s
+18/12/09 17:45:55 INFO DAGScheduler: Job 22 finished: collect at utils.scala:200, took 0.352913 s
+18/12/09 17:46:25 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))
+18/12/09 17:46:25 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))
+18/12/09 17:46:25 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))
+LIMIT 10
+18/12/09 17:46:25 INFO InMemoryTableScanExec: Predicate isnotnull(day#31) generates partition filter: ((day.count#1998 - day.nullCount#1997) > 0)
+18/12/09 17:46:25 INFO InMemoryTableScanExec: Predicate isnotnull(month#30) generates partition filter: ((month.count#1993 - month.nullCount#1992) > 0)
+18/12/09 17:46:25 INFO InMemoryTableScanExec: Predicate carrier#38 IN (UA,WN,AA,DL) generates partition filter: (((((carrier.lowerBound#2031 <= UA) && (UA <= carrier.upperBound#2030)) || ((carrier.lowerBound#2031 <= WN) && (WN <= carrier.upperBound#2030))) || ((carrier.lowerBound#2031 <= AA) && (AA <= carrier.upperBound#2030))) || ((carrier.lowerBound#2031 <= DL) && (DL <= carrier.upperBound#2030)))
+18/12/09 17:46:25 INFO CodeGenerator: Code generated in 4.111741 ms
+18/12/09 17:46:25 INFO SparkContext: Starting job: collect at utils.scala:200
+18/12/09 17:46:25 INFO DAGScheduler: Got job 23 (collect at utils.scala:200) with 1 output partitions
+18/12/09 17:46:25 INFO DAGScheduler: Final stage: ResultStage 31 (collect at utils.scala:200)
+18/12/09 17:46:25 INFO DAGScheduler: Parents of final stage: List()
+18/12/09 17:46:25 INFO DAGScheduler: Missing parents: List()
+18/12/09 17:46:25 INFO DAGScheduler: Submitting ResultStage 31 (MapPartitionsRDD[100] at collect at utils.scala:200), which has no missing parents
+18/12/09 17:46:25 INFO MemoryStore: Block broadcast_30 stored as values in memory (estimated size 36.7 KB, free 343.5 MB)
+18/12/09 17:46:25 INFO MemoryStore: Block broadcast_30_piece0 stored as bytes in memory (estimated size 13.9 KB, free 343.5 MB)
+18/12/09 17:46:25 INFO BlockManagerInfo: Added broadcast_30_piece0 in memory on 127.0.0.1:57729 (size: 13.9 KB, free: 343.7 MB)
+18/12/09 17:46:25 INFO SparkContext: Created broadcast 30 from broadcast at DAGScheduler.scala:1006
+18/12/09 17:46:25 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 31 (MapPartitionsRDD[100] at collect at utils.scala:200) (first 15 tasks are for partitions Vector(0))
+18/12/09 17:46:25 INFO TaskSchedulerImpl: Adding task set 31.0 with 1 tasks
+18/12/09 17:46:25 INFO BlockManagerInfo: Removed broadcast_29_piece0 on 127.0.0.1:57729 in memory (size: 8.5 KB, free: 343.7 MB)
+18/12/09 17:46:25 WARN TaskSetManager: Stage 31 contains a task of very large size (27699 KB). The maximum recommended task size is 100 KB.
+18/12/09 17:46:25 INFO TaskSetManager: Starting task 0.0 in stage 31.0 (TID 38, localhost, executor driver, partition 0, PROCESS_LOCAL, 28364187 bytes)
+18/12/09 17:46:25 INFO Executor: Running task 0.0 in stage 31.0 (TID 38)
+18/12/09 17:46:25 INFO BlockManager: Found block rdd_9_0 locally
+18/12/09 17:46:25 INFO Executor: 1 block locks were not released by TID = 38:
+[rdd_9_0]
+18/12/09 17:46:25 INFO Executor: Finished task 0.0 in stage 31.0 (TID 38). 1588 bytes result sent to driver
+18/12/09 17:46:25 INFO TaskSetManager: Finished task 0.0 in stage 31.0 (TID 38) in 315 ms on localhost (executor driver) (1/1)
+18/12/09 17:46:25 INFO TaskSchedulerImpl: Removed TaskSet 31.0, whose tasks have all completed, from pool 
+18/12/09 17:46:25 INFO DAGScheduler: ResultStage 31 (collect at utils.scala:200) finished in 0.315 s
+18/12/09 17:46:25 INFO DAGScheduler: Job 23 finished: collect at utils.scala:200, took 0.325297 s
+18/12/09 17:46:25 INFO SparkSqlParser: Parsing command: SELECT `year`, `month`, `day`, `carrier`, `dep_delay`, `air_time`, `distance`
+FROM `flights`
+WHERE ((`day` = 17.0) AND (`month` = 5.0) AND (`carrier` IN ("UA", "WN", "AA", "DL")))
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 665
+18/12/09 18:35:22 INFO BlockManagerInfo: Removed broadcast_27_piece0 on 127.0.0.1:57729 in memory (size: 14.2 KB, free: 343.7 MB)
+18/12/09 18:35:22 INFO BlockManagerInfo: Removed broadcast_24_piece0 on 127.0.0.1:57729 in memory (size: 15.2 KB, free: 343.8 MB)
+18/12/09 18:35:22 INFO BlockManagerInfo: Removed broadcast_30_piece0 on 127.0.0.1:57729 in memory (size: 13.9 KB, free: 343.8 MB)
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 670
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 664
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 678
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 666
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 675
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 669
+18/12/09 18:35:22 INFO BlockManagerInfo: Removed broadcast_28_piece0 on 127.0.0.1:57729 in memory (size: 15.4 KB, free: 343.8 MB)
+18/12/09 18:35:22 INFO BlockManagerInfo: Removed broadcast_23_piece0 on 127.0.0.1:57729 in memory (size: 14.2 KB, free: 343.8 MB)
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 674
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 673
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 672
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 667
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 679
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 677
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 671
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 668
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned accumulator 676
+18/12/09 18:35:22 INFO ContextCleaner: Cleaned shuffle 5

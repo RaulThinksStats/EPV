@@ -1,0 +1,103 @@
+---
+title: "EPV"
+author: "Raul J.T.A."
+date: "9/2/2018"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+bibliography: R.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##EPV Summary (09/02/18)
+Investigation concerns the rationale behind the 10-EPV rule of thumb. Our intuiton was that the rule safeguarded against sparsity in the dataset, leading to more accurate and reliable estimation of the parameters. One troubling issue I encountered is that Harrell's emphasis was on how EPV affected the __accuracy__ of a model, i.e. predictive capability as measured through AUC, while all others focus on accurate __parameter estimates__. Fortunately, the Courvoisier paper I attempted to replicate focuses on both. Some differences between her simulation and ours is that we use a categorical predictor to pursue our notion of sparsity, and probably other things. For now, we will assume our approach is correct for the purposes of illustrating how to improve code. In all honesty, there are a handful of troubling theoretical issues with this approach, but for now we will omit and ignore them to illustrate how to improve code.
+
+##Simulation design (09/03/18)
+In general, the essential algorithm is as follows:
+
+1. Generate population data.  
+2. Sequentially draw 500 samples from the population until the EPV constraint is met.  
+
+There are two main issues with this code.
+
+1. __Readability__: quickly figuring out the simulation design is impossible given how the code is written. The variable names are cryptic, code is not commented, and functions not created. Some ways to improve the code are to create function for operations occurring in multiple places, e.g. __odds ratio__, creating functions for each of the two steps then wrapping these two functions, adding comments and clear variable names.  
+2. __Speed__: simulation takes way too long mostly because the way I'm conducting the sequential sampling. Some areas for improvement are to not grow the vector within the loop by allotting space beforehand and to parallelize the 500 samples.  
+3. __Clarity of problem, intuition, and simulation design__: One other minor area for improvement are in the figuring out of what parameters are useful and to be easily expected from the user for the simulation. This is moreso a theoretical issue, and specifically the issue is that I would calculate p1 and p0 manually to satisfy some odds ratio, but now want to make this process into a function that takes in the odds ratio and a+b, (previously p1 and spits out p0), and spits out the necessary a and b in the contingency table. __As far as the simulation goes, this rationale and clarity of the design of this simulation is what is missing, and what made this so difficult to come back to. In the future, it would bode well to clearly define the problem, rationale, and simulation design for ease of returning back to it__. Honestly my approach still needs some work, but what I have now will suffice.
+
+Let me try to rethink and rephrase the intuition and problem we originally proposed. We thought the rationale behind having an __EPV__ of 10-20 is that it prevented __sparsity in the cells__, which leads to better estimation, similar to the rationale behind Fisher's exact test. To probe at this issue and simultaneously test our intuition, we would attempt to replicate Courvoisier's results for one predictor, except that we would make it categorical instead of continuous to better test our sparisity intuition. Enter __Gini coefficient__. This coefficient is designed to measure statistical dispersion, or more precisely, how far a sample distribution deviates from an equal distribution. __Our goal is to develop some sparsity metric that would better capture the intution of EPV, the results in Courvoisier's paper, and the Gini coefficient__. Still alot of gaps in this write-up, but this at least attempts to thread together the otherwise disparate ideas introduced to me by my collaborators.
+
+While developing the intuition might take some time. A feasible approach to reach a MVP is to: 
+
+1. Calculate by-hand the necessary p0 and p1 to satisfy said constraint for each OR (Start with 1 then work through next steps).
+2. Go through making code readable.  
+3. Begin improvements to speed without parallel and measure improvement for 5 replications.
+4. Make parallel and note improvements again.
+
+##Optimizing simulations through functions and parallel (09/04/18)
+My idea is to create a function to generate the population for one prevalence (satisfying the first step in the algorithm), then to write a second key function to create the 500 replicates (satisfying the second step in the algorithm). The combination of these two functions should create the 500 replicates necessary to fill in point on any of the four plots.
+
+This has been completed, and the functions are called `generate_population(true_or, p0, p1, tolerance)`, and `generate_replicates(dat, epv, iterations)` respectively. In addition, I wrote a which can calculate all of the necessary data sets along an inputted vector of EPV values, `generate_replicates_across_epv()`. This function provides a full line for a given odds ratio. 
+
+Next I plan to write a function to create all of the necessary data sets across all inputted OR's. But this requires me to write a function to calculate the necessary p0 and p1 given an overall prevalence of an outcome, and an odds ratio. Creating this helper function reqires some algebra that I was having trouble with yesterday. Another task is to parallelize the replicates function, and compare speeds. Some things for me to do now are:
+
+1. Create `generate_replicates_across_or(dat,or,epv,iterations)`.
+a. Solve algebra to create helper function which calculates p0 and p1 given odds ratios and necessary constraints.
+b. Write major function above.
+2. Parallelize `generate_replicates()` and compare speed to nonparalell and old code.
+3. Eventually write operations to compute values in plots ( __one could be the Gini-coefficient to then use as the x-axis to compare results__ ), and wrap all necessary functions in one function called `epv_simulation()`. 
+
+Some other work that I can do to do more exploring and learning is:
+
+1. Better understand the Gini-coefficient and how it may be applied to my problem.
+2. Create R.Bib file.
+
+__Insight__: EPV essentially serves as a proxy for two qualities which determine whether your estimates are accurate (unbiased) and precise (low-variability) (we may change this once we learn more about what EPV is supposed to help, but for now, a viable goal). __Depending on the sample prevalence of the outcome, EPV directly affects the sample size, which consequently affects the sparsity of cells__. Ideally we want to discover a minimal number (Fisher says 5) of observations for each cell such that our parameter estimates are good. For now, we can use EPV and the Gini coefficient to gauge our intuition. Eventuallly we want a metric incorporating population prevalence, effect sizes (odds ratio), number of variables, correlation between variables, and sparsity of cells (and maybe missing data) to ensure accurate parameter estimates (read discussion of Courvoisier). 
+
+__Update__: `generate_replicates()` has been written to incorporate a parallel option. My CPU has `r library(parallel)` `r detectCores()` cores somehow (new Macbook with 6 cores which through some feature act like `r detectCores()`). Comparing the generation of one data point for EPV of 10 and the given EPVs, I see increase in speed greater than six-fold. While I do want to compare this revised version of code to my new one in terms of speed, it might not be fair given they do slightly different things. Nonetheless, tomorrow I must:
+
+1. Setup the simulation comparably such that I can compare one run of the old version of the code with this newer version built using my newfound knowledge of performance issues in R. I may then compare this to a parallelized version.
+2. Prior to that, I should calculate the OR of each replicated data set and maybe a figure such that the runs match.
+3. The list of 3 above for today should help finish off the replication of this simulation should I choose to continue.
+4. The list of two is to help me build that metric should I want to develop a useful new metric. I'm afraid that I would need PASS for this, but we'll see.
+
+## (09/05/18)
+
+Just comparing the parallel to the non-parallel option, we see that the parallel is more than 6 times faster.
+
+```{r eval=F}
+#non-parallel, single-core - Time difference of 3.118403 mins i.e. 187.08 secs
+test <- generate_replicates(dat,10,500,1)
+
+#parallel, ten-core - Time difference of 29.69002 secs
+test <- generate_replicates(dat,10,500,10)
+
+# 187.08/29.69 = 6.301; so very efficient.
+```
+
+## Brushing off cowwebs to wrap this up (11/17/18)
+Just now revisiting this since I'm getting a handle over my job. Seems that the `generate_population()` function was inaccurately measuring odds ratio, so populations were having true odds ratios not equal to the truth, admitting some tolerance. Fixed that issue.
+
+Now I'm trying to understand the rest... So, essentially the goal is to fix `generate_replicates()` so that it will work, then make sure that `generate_replicates across_epv()` works. Then manually put calculate the necessary p0 and p1 to generate for all of the neessary conditions (4, then 8 for unbalanced/ rare events), then recreate Fig 1.a. This will have to be done by taking the results, calcualting the odds ratios of each, then flagging if over 50 or below 1/50, then counting the proportion. That should allow me to recreate the figure.
+
+After that, I need to re-verify how to calculate Gini for contingency table, then calculate it either for each true population (4 or 8), and then for each replicate along with the sample size to get an overall gauge of expected sample size and equality of values in cells. But start with fixing parallel implementation of `generate_replicates()`, because non-parallel works.
+
+## Almost done...table issue (11/21/18)
+
+Almost done, but I just uncovered an error with my use of `table()` that is effectively messing up the results of both my `Gini()` and `or()` functions. I have to find a way to make `table()` provide the results that are 0, and not simply omit that row or column if the sample doesn't include the necessary values. This problem is very frustrating, especially since its the last thing stopping me from recreating the figure.
+
+##Quick Fix to table + finalizing (11/22/18)
+Quick fix I found after lots of searching is to convert each of the two variables into factors and setting the levels manually to retain the 0s in the table should some of these (levels) be missing.
+
+Figure is produced. Just have to make it pretty and informative now, and rerun after setting iter to 500 instead of 50.
+
+---
+nocite: | 
+  @art, @data, @advanced
+...
+
+##References
+

@@ -1,0 +1,1076 @@
+18/12/10 10:49:21 WARN HeartbeatReceiver: Removing executor driver with no recent heartbeats: 9130343 ms exceeds timeout 120000 ms
+18/12/10 10:49:21 ERROR TaskSchedulerImpl: Lost executor driver on localhost: Executor heartbeat timed out after 9130343 ms
+18/12/10 10:49:21 INFO DAGScheduler: Executor lost: driver (epoch 7)
+18/12/10 10:49:21 INFO BlockManagerMasterEndpoint: Trying to remove executor driver from BlockManagerMaster.
+18/12/10 10:49:21 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_9_0 !
+18/12/10 10:49:21 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_31_0 !
+18/12/10 10:49:21 WARN SparkContext: Killing executors is only supported in coarse-grained mode
+18/12/10 10:49:21 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 10:49:21 INFO BlockManagerMaster: Removed driver successfully in removeExecutor
+18/12/10 10:49:21 INFO DAGScheduler: Shuffle files lost for executor: driver (epoch 7)
+18/12/10 10:49:21 INFO DAGScheduler: Host added was in lost list earlier: localhost
+18/12/10 10:49:28 INFO Executor: Told to re-register on heartbeat
+18/12/10 10:49:28 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 10:49:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 10:49:28 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:57729 with 366.3 MB RAM, BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 10:49:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 10:49:29 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 10:49:29 INFO BlockManagerInfo: Added rdd_31_0 in memory on 127.0.0.1:57729 (size: 1000.0 B, free: 366.3 MB)
+18/12/10 10:49:29 INFO BlockManagerInfo: Added rdd_9_0 in memory on 127.0.0.1:57729 (size: 22.5 MB, free: 343.8 MB)
+18/12/10 10:49:52 INFO Executor: Told to re-register on heartbeat
+18/12/10 10:49:52 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 10:49:52 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 10:49:52 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 10:49:52 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 10:49:52 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 10:49:52 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:47:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:47:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:47:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:47:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:47:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:47:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:47:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:47:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:47:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:47:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:47:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:47:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:47:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:47:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:48:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:48:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:48:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:48:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:48:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:48:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:48:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:48:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:48:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:48:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:48:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:48:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:48:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:48:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:48:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:48:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:48:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:48:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:48:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:48:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:48:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:48:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:48:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:48:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:48:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:48:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:48:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:48:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:48:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:48:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:48:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:49:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:49:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:49:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:49:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:49:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:49:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:49:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:49:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:49:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:49:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:49:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:49:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:49:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:49:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:49:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:49:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:49:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:49:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:49:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:49:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:49:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:49:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:49:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:49:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:49:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:49:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:49:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:49:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:49:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:49:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:49:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:50:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:50:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:50:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:50:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:50:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:50:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:50:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:50:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:50:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:50:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:50:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:50:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:50:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:50:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:50:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:50:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:50:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:50:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:50:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:50:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:50:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:50:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:50:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:50:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:50:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:50:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:50:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:50:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:50:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:50:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:50:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:51:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:51:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:51:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:51:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:51:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:51:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:51:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:51:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:51:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:51:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:51:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:51:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:51:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:51:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:51:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:51:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:51:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:51:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:51:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:51:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:51:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:51:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:51:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:51:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:51:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:51:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:51:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:51:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:51:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:51:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:51:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:52:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:52:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:52:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:52:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:52:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:52:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:52:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:52:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:52:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:52:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:52:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:52:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:52:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:52:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:52:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:52:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:52:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:52:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:52:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:52:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:52:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:52:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:52:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:52:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:52:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:52:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:52:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:52:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:52:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:52:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:52:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:53:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:53:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:53:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:53:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:53:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:53:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:53:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:53:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:53:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:53:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:53:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:53:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:53:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:53:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:53:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:53:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:53:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:53:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:53:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:53:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:53:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:53:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:53:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:53:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:53:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:53:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:53:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:53:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:53:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:53:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:53:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:54:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:54:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:54:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:54:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:54:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:54:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:54:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:54:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:54:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:54:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:54:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:54:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:54:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:54:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:54:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:54:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:54:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:54:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:54:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:54:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:54:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:54:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:54:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:54:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:54:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:54:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:54:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:54:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:54:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:54:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:54:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:55:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:55:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:55:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:55:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:55:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:55:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:55:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:55:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:55:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:55:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:55:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:55:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:55:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:55:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:55:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:55:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:55:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:55:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:55:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:55:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:55:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:55:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:55:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:55:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:55:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:55:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:55:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:55:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:55:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:55:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:55:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:56:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:56:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:56:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:56:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:56:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:56:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:56:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:56:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:56:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:56:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:56:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:56:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:56:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:56:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:56:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:56:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:56:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:56:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:56:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:56:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:56:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:56:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:56:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:56:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:56:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:56:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:56:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:56:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:56:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:56:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:56:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:57:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:57:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:57:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:57:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:57:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:57:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:57:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:57:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:57:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:57:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:57:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:57:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:57:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:57:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:57:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:57:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:57:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:57:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:57:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:57:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:57:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:57:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:57:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:57:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:57:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:57:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:57:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:57:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:57:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:57:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:57:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:58:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:58:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:58:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:58:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:58:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:58:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:58:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:58:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:58:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:58:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:58:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:58:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:58:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:58:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:58:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:58:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:58:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:58:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:58:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:58:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:58:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:58:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:58:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:58:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:58:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:58:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:58:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:58:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:58:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:58:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:58:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:59:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:59:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:59:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:59:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:59:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:59:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:59:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:59:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:59:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:59:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:59:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:59:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:59:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:59:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:59:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:59:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:59:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:59:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:59:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:59:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:59:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:59:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:59:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:59:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:59:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 18:59:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 18:59:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 18:59:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 18:59:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 18:59:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 18:59:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:00:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:00:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:00:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:00:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:00:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:00:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:00:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:00:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:00:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:00:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:00:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:00:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:00:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:00:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:00:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:00:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:00:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:00:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:00:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:00:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:00:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:00:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:00:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:00:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:00:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:00:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:00:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:00:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:00:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:00:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:00:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:01:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:01:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:01:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:01:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:01:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:01:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:01:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:01:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:01:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:01:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:01:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:01:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:01:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:01:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:01:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:01:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:01:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:01:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:01:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:01:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:01:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:01:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:01:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:01:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:01:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:01:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:01:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:01:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:01:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:01:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:01:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:02:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:02:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:02:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:02:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:02:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:02:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:02:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:02:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:02:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:02:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:02:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:02:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:02:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:02:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:02:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:02:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:02:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:02:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:02:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:02:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:02:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:02:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:02:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:02:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:02:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:02:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:02:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:02:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:02:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:02:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:02:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:03:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:03:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:03:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:03:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:03:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:03:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:03:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:03:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:03:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:03:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:03:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:03:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:03:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:03:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:03:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:03:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:03:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:03:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:03:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:03:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:03:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:03:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:03:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:03:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:03:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:03:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:03:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:03:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:03:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:03:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:03:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:04:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:04:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:04:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:04:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:04:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:04:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:04:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:04:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:04:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:04:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:04:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:04:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:04:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:04:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:04:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:04:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:04:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:04:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:04:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:04:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:04:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:04:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:04:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:04:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:04:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:04:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:04:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:04:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:04:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:04:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:04:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:05:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:05:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:05:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:05:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:05:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:05:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:05:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:05:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:05:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:05:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:05:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:05:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:05:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:05:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:05:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:05:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:05:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:05:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:05:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:05:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:05:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:05:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:05:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:05:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:05:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:05:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:05:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:05:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:05:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:05:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:05:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:06:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:06:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:06:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:06:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:06:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:06:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:06:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:06:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:06:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:06:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:06:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:06:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:06:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:06:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:06:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:06:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:06:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:06:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:06:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:06:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:06:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:06:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:06:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:06:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:06:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:06:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:06:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:06:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:06:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:06:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:06:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:07:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:07:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:07:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:07:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:07:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:07:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:07:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:07:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:07:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:07:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:07:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:07:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:07:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:07:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:07:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:07:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:07:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:07:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:07:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:07:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:07:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:07:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:07:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:07:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:07:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:07:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:07:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:07:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:07:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:07:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:07:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:08:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:08:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:08:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:08:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:08:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:08:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:08:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:08:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:08:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:08:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:08:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:08:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:08:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:08:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:08:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:08:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:08:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:08:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:08:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:08:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:08:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:08:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:08:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:08:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:08:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:08:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:08:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:08:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:08:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:08:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:08:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:09:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:09:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:09:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:09:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:09:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:09:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:09:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:09:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:09:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:09:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:09:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:09:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:09:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:09:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:09:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:09:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:09:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:09:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:09:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:09:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:09:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:09:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:09:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:09:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:09:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:09:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:09:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:09:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:09:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:09:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:09:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:10:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:10:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:10:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:10:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:10:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:10:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:10:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:10:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:10:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:10:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:10:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:10:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:10:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:10:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:10:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:10:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:10:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:10:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:10:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:10:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:10:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:10:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:10:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:10:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:10:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:10:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:10:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:10:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:10:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:10:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:10:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:11:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:11:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:11:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:11:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:11:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:11:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:11:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:11:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:11:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:11:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:11:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:11:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:11:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:11:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:11:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:11:34 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:11:34 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:11:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:34 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:11:34 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:11:34 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:11:44 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:11:44 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:11:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:44 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:11:44 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:11:44 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:11:54 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:11:54 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:11:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:11:54 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:11:54 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:11:54 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:12:04 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:12:04 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:12:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:04 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:12:04 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:12:04 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:12:14 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:12:14 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:12:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:14 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:12:14 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:12:14 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:12:24 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:12:24 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:12:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:24 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:12:24 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:12:24 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)
+18/12/10 19:12:35 INFO Executor: Told to re-register on heartbeat
+18/12/10 19:12:35 INFO BlockManager: BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None) re-registering with master
+18/12/10 19:12:35 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:35 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57729, None)
+18/12/10 19:12:35 INFO BlockManager: Reporting 2 blocks to the master.
+18/12/10 19:12:35 INFO BlockManagerInfo: Updated rdd_31_0 in memory on 127.0.0.1:57729 (current size: 1000.0 B, original size: 1000.0 B, free: 343.8 MB)
+18/12/10 19:12:35 INFO BlockManagerInfo: Updated rdd_9_0 in memory on 127.0.0.1:57729 (current size: 22.5 MB, original size: 22.5 MB, free: 343.8 MB)

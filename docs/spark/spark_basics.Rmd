@@ -1,0 +1,124 @@
+---
+title: "Spark Basics"
+author: "Raul J.T.A."
+date: "12/5/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Spark Overview
+Spark is a general-purpose distributed data processing engine primarily used to rapidly query, wrangle, visualize, and analyze data at scale. It improved upon Google's MapReduce resilient, distributed processing framework which had three key components: _distributed data_, _distributed computations_, and _fault-tolerance_. Some typical applications are the integration of large volumes of data from a variety of sources, real-time processing and manipulation of data streams, interactive visualizations, and the training of machine-learning algorithms. Spark is especially useful for parallel processing of distributed data with iterative algorithms. While Spark supports a wide variety of programming languages such as Java, Python, and Scala, today we focus on implementing Spark within __R__ through the `sparklyr` package. You can read more about Spark here:
+
+<https://mapr.com/blog/spark-101-what-it-what-it-does-and-why-it-matters/>
+
+In a nutshell, __Spark solves the issue of dealing with data too large or expensive to store or analyze on a local computer__. While workarounds are possible, they can very easily limit the questions a data scientists _wants_ to ask. To prevent his curiousity from being stifled, learning and utilizing Spark as an analytics engine is a necessary leap to take for any data scientist. "Spark has many capabilities that makes it ideal for Data Science in a data lake, such as close integration with Hadoop and Hive, the ability to cache data into memory across multiple nodes, data transformers, and its Machine Learning libraries". "Data Scientists like using R because it allows them to complete a Data Science project from beginning to end inside the R environment, and in memory", and for that reason we'll take some time to understand it. 
+
+"The approach, then, is to __push as much compute__ to the cluster as possible, using R primarily as an interface to Spark for the Data Scientist, which will then __collect as few results__ as possible back into R memory, mostly to visualize and communicate. As shown in the slide, the more import, tidy, transform and modeling work we can push to Spark, the faster we can analyze very large data sets"
+
+# sparklyr
+
+Building off the key components of MapReduce, we'll spend some time talking about data storage and distributed computations in Spark via __R__. In addition, we have to discuss deployment options and necessary configurations. 
+
+Insert figure showing "how a spark application runs on a cluster". 
+
+For illustrative purposes, we mirror the workflow we outline in the _R Language_ post found here <R.Language.Link.com>. In essence, it consists of reading in data, tidying it, analyzing it (primarily through models), and visualizing it. All of this in straight-forward in __R__, but in Spark we'll see the difference in how data storage and computations are handled. We share this quote from R's sparklyr page:
+
+
+
+##Cluster configuration and deployment
+
+Configuration parameters can be set in the config R object or can be set in the `config.yml`. Alternatively, they can be set in the `spark-defaults.conf`.
+
+__Configuration in R Script__
+```{r echo=T, eval=F}
+config <- spark_config()
+config$spark.executor.cores <- 2
+config$spark.executor.memory <- "4G"
+sc <- spark_connect(master = "yarn-client", config = config, version = '2.0.0')
+```
+
+__Configuration in YAML script__
+```{r, echo=T, eval=F}
+default:
+  spark.executor.cores: 2
+  spark.executor.memory: 4G
+```
+
+Connecting and disconnecting from a spark cluster is easy and done through the function below. For deployment, there are generally two types: _local_ and _cluster_.
+
+`spark_connect(master = "type"")` - 
+
+`spark_disconnect()`
+
+
+```{r}
+
+```
+
+##Data management
+
+
+
+
+###Reading/Writing
+
+`spark_read_type(repartition = 0, memory = T)` - 
+`spark_write_type()` - 
+
+`copy_to()` - 
+`collect()` - 
+
+`tbl_cache()` - 
+`tbl_uncache()` - 
+
+The tbl_cache command loads the results into an Spark RDD in memory, so any analysis from there on will not need to re-read and re-transform the original file
+```{r}
+
+```
+
+###Tidying data
+
+dplyr knows how to convert the following R functions to Spark SQL
+```{r}
+
+```
+
+##Analysis
+
+
+```{r}
+
+```
+
+###Distributed Computation
+
+
+```{r}
+
+```
+
+###Feature Engineering (maybe I'll skip)
+
+```{r}
+
+```
+
+###Machine Learning
+
+
+```{r}
+
+```
+
+###Streaming
+
+
+
+
+
+```{r}
+
+```
