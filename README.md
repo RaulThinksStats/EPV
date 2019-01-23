@@ -1,7 +1,7 @@
 README
 ================
-Raul J.T.A.
-11/3/2018
+Raul JTA
+12/22/2019
 
 Overview
 --------
@@ -11,8 +11,9 @@ This investigation concerns the rationale behind the 10-EPV rule of thumb for pr
 In short, I strove to recreate the figure below where the same simulation is created with a categorical predictor.
 
 <p align="center">
-<img src="images/courvoisier.png" width=50%>
+<img src="docs/images/courvoisier.png" width=50%>
 </p>
+
 Technical
 ---------
 
@@ -40,8 +41,9 @@ Results
 Running a simulation with a categorical as oppose to a continuous predictor resulted in a much larger proportion of nonconverged parameter estimates. Interestingly, holding EPV constant, it appeared that sequential sampling resulted in identical number of sample sizes across odds ratios, as can be seen in the data frame `n_tab`. In addition, we validated our suspicion that larger odds ratios and smaller EPVs result in more inequitable parameter estimates as measured via the Gini coefficient, and recorded in `gini_tab`. This finding may be extended and explored to propose a metric that would better inform power and sample size estimates for prognostic models, among other things. Below is the our replicated plot with the above plot superimposed on it.
 
 <p align="center">
-<img src="images/Comparison.png" width=70%>
+<img src="docs/images/Comparison.png" width=70%>
 </p>
+
 References
 ----------
 
