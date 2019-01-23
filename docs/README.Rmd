@@ -16,11 +16,7 @@ This investigation concerns the rationale behind the 10-EPV rule of thumb for pr
 
 In short, I strove to recreate the figure below where the same simulation is created with a categorical predictor.
 
-```{r fig.align="center", warning=F, message=F, echo=F, out.width="50%"}
-library(knitr)
-include_graphics("/Users/Raul/Desktop/Working/epv/docs/courvoisier.png")
-```
-
+<p align="center"><img src="images/courvoisier.png" width=50%></p>
 ##Technical
 
 All coding including this README file were generated through `R` and `RMarkdown`. In addition, this is a `packrat` project, which means that you may have to install the package `packrat` in an effort to ensure reproducibility. At the least, this package aids reproducibility by checking whether the proper dependencies (R version and packages) are installed on your CPU.
@@ -42,11 +38,6 @@ Consequently, I created a list of functions instrumental in recreating ths simul
 ##Results
 Running a simulation with a categorical as oppose to a continuous predictor resulted in a much larger proportion of nonconverged parameter estimates. Interestingly, holding EPV constant, it appeared that sequential sampling resulted in identical number of sample sizes across odds ratios, as can be seen in the data frame `n_tab`. In addition, we validated our suspicion that larger odds ratios and smaller EPVs result in more inequitable parameter estimates as measured via the Gini coefficient, and recorded in `gini_tab`. This finding may be extended and explored to propose a metric that would better inform power and sample size estimates for prognostic models, among other things. Below is the our replicated plot with the above plot superimposed on it.
 
-
-```{r fig.align="center", warning=F, message=F, echo=F, out.width="70%"}
-include_graphics("/Users/Raul/Desktop/Working/epv/output/Comparison.png")
-```
-
-
+<p align="center"><img src="images/Comparison.png" width=70%></p>
 
 ##References
